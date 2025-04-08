@@ -1,0 +1,69 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://acme.com",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "description": "Utility functions for styling and type safety",
+      "dependencies": [
+        "clsx@2.1.1",
+        "tailwind-merge@3.0.2"
+      ],
+      "files": [
+        {
+          "path": "registry/utils/utils.ts",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/denis-sudolabs/nextjs-shadcn-registry/main/public/r/utils.json",
+        "https://raw.githubusercontent.com/denis-sudolabs/nextjs-shadcn-registry/main/public/r/indicator.json",
+        "button"
+      ],
+      "dependencies": [
+        "react-icons@5.5.0",
+        "@radix-ui/react-accordion@1.2.3",
+        "@storybook/react@8.6.3"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/sidebar/sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/ui/sidebar.tsx"
+        },
+        {
+          "path": "registry/ui/sidebar/sidebar.stories.tsx",
+          "type": "registry:component",
+          "target": "components/ui/sidebar.stories.tsx"
+        }
+      ],
+      "description": "A responsive sidebar component with storybook integration.",
+      "categories": ["UI", "Layout"],
+      "docs": "Set up the sidebar by importing it into your project and adjusting its props as needed.",
+      "tags": ["sidebar", "layout", "responsive"]
+    },
+    {
+      "name": "indicator",
+      "type": "registry:ui",
+      "description": "A customizable indicator component with different variants",
+      "dependencies": ["class-variance-authority@0.7.1"],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/denis-sudolabs/nextjs-shadcn-registry/main/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/indicator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/indicator.tsx"
+        }
+      ]
+    }
+  ]
+}
