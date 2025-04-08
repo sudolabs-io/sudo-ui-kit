@@ -35,12 +35,12 @@
       "files": [
         {
           "path": "registry/ui/sidebar/sidebar.tsx",
-          "type": "registry:component",
+          "type": "registry:ui",
           "target": "components/ui/sidebar.tsx"
         },
         {
           "path": "registry/ui/sidebar/sidebar.stories.tsx",
-          "type": "registry:component",
+          "type": "registry:ui",
           "target": "components/ui/sidebar.stories.tsx"
         }
       ],
