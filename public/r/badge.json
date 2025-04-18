@@ -4,7 +4,8 @@
   "type": "registry:ui",
   "description": "A customizable badge component with different variants and shapes",
   "dependencies": [
-    "class-variance-authority@0.7.1"
+    "class-variance-authority@0.7.1",
+    "@radix-ui/react-slot@1.1.2"
   ],
   "registryDependencies": [
     "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",

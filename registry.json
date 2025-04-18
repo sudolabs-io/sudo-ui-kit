@@ -45,15 +45,24 @@
         }
       ],
       "description": "A responsive sidebar component with storybook integration.",
-      "categories": ["UI", "Layout"],
+      "categories": [
+        "UI",
+        "Layout"
+      ],
       "docs": "Set up the sidebar by importing it into your project and adjusting its props as needed.",
-      "tags": ["sidebar", "layout", "responsive"]
+      "tags": [
+        "sidebar",
+        "layout",
+        "responsive"
+      ]
     },
     {
       "name": "indicator",
       "type": "registry:ui",
       "description": "A customizable indicator component with different variants",
-      "dependencies": ["class-variance-authority@0.7.1"],
+      "dependencies": [
+        "class-variance-authority@0.7.1"
+      ],
       "registryDependencies": [
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
       ],
@@ -108,10 +117,28 @@
       ]
     },
     {
+      "name": "LoaderIcon",
+      "type": "registry:component",
+      "description": "A loader icon component",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/LoaderIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/LoaderIcon.tsx"
+        }
+      ]
+    },
+    {
       "name": "badge",
       "type": "registry:ui",
       "description": "A customizable badge component with different variants and shapes",
-      "dependencies": ["class-variance-authority@0.7.1"],
+      "dependencies": [
+        "class-variance-authority@0.7.1",
+        "@radix-ui/react-slot@1.1.2"
+      ],
       "registryDependencies": [
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/CloseIcon.json",
@@ -134,9 +161,74 @@
           "target": "components/ui/badgeStories/badge-square.stories.tsx"
         }
       ],
-      "categories": ["UI", "Data Display"],
+      "categories": [
+        "UI",
+        "Data Display"
+      ],
       "docs": "Use the badge component to highlight or indicate status information",
-      "tags": ["badge", "tag", "label", "pill"]
+      "tags": [
+        "badge",
+        "tag",
+        "label",
+        "pill"
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "description": "A customizable button component with different variants, sizes, and icon options",
+      "dependencies": [
+        "class-variance-authority@0.7.1",
+        "@radix-ui/react-slot@1.1.2"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LoaderIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/button.tsx"
+        },
+        {
+          "path": "registry/ui/buttonStories/variants.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/buttonStories/variants.stories.tsx"
+        },
+        {
+          "path": "registry/ui/buttonStories/loading.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/buttonStories/loading.stories.tsx"
+        },
+        {
+          "path": "registry/ui/buttonStories/textOnly.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/buttonStories/textOnly.stories.tsx"
+        },
+        {
+          "path": "registry/ui/buttonStories/textWithIcon.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/buttonStories/textWithIcon.stories.tsx"
+        },
+        {
+          "path": "registry/ui/buttonStories/iconOnly.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/buttonStories/iconOnly.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms"
+      ],
+      "docs": "Use the button component for user interactions like form submissions and actions",
+      "tags": [
+        "button",
+        "interactive",
+        "action",
+        "form"
+      ]
     }
   ]
 }
