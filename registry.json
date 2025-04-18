@@ -110,8 +110,8 @@
       "dependencies": ["class-variance-authority@0.7.1"],
       "registryDependencies": [
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
-        "CloseIcon",
-        "ClockIcon"
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/CloseIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ClockIcon.json"
       ],
       "files": [
         {
