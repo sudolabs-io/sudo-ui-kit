@@ -436,6 +436,44 @@
           "target": "components/icons/TooltipIcon.tsx"
         }
       ]
+    },
+    {
+      "name": "callout",
+      "type": "registry:ui",
+      "description": "A callout component for displaying important information or alerts with custom styling",
+      "dependencies": [
+        "class-variance-authority@0.7.1",
+        "lucide-react@0.477.0"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/CloseIcon.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/callout.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/callout.tsx"
+        },
+        {
+          "path": "registry/ui/callout.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/callout.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Feedback",
+        "Display"
+      ],
+      "docs": "Use the callout component to highlight important information with various styling options",
+      "tags": [
+        "callout",
+        "alert",
+        "notification",
+        "message"
+      ]
     }
   ]
 }
