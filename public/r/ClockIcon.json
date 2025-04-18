@@ -4,7 +4,7 @@
   "type": "registry:component",
   "description": "A clock icon component",
   "registryDependencies": [
-    "IconTypes"
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
   ],
   "files": [
     {

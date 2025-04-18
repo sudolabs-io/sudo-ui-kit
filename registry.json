@@ -81,7 +81,9 @@
       "name": "CloseIcon",
       "type": "registry:component",
       "description": "A close icon component",
-      "registryDependencies": ["IconTypes"],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
       "files": [
         {
           "path": "registry/components/icons/CloseIcon.tsx",
@@ -94,7 +96,9 @@
       "name": "ClockIcon",
       "type": "registry:component",
       "description": "A clock icon component",
-      "registryDependencies": ["IconTypes"],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
       "files": [
         {
           "path": "registry/components/icons/ClockIcon.tsx",
