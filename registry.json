@@ -583,6 +583,170 @@
         "form",
         "input"
       ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "description": "A horizontal or vertical separator with customizable appearance",
+      "dependencies": [
+        "@radix-ui/react-separator@1.1.2"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/separator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/separator.tsx"
+        },
+        {
+          "path": "registry/ui/separator.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/separator.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Layout"
+      ],
+      "docs": "Use the separator component to visually separate content in a list or group",
+      "tags": [
+        "separator",
+        "divider",
+        "hr"
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "description": "Displays rich content in a portal, triggered by a button",
+      "dependencies": [
+        "@radix-ui/react-popover@^1.1.4"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/popover.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/popover.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Overlay"
+      ],
+      "docs": "Use the popover component to display content in a floating panel",
+      "tags": [
+        "popover",
+        "dropdown",
+        "popup"
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "description": "A modal dialog that interrupts the user with important content",
+      "dependencies": [
+        "@radix-ui/react-dialog@^1.1.4",
+        "lucide-react@0.477.0"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dialog.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Overlay"
+      ],
+      "docs": "Use the dialog component to display content that requires user interaction",
+      "tags": [
+        "dialog",
+        "modal",
+        "popup"
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "description": "Command menu for keyboard-first interactions",
+      "dependencies": [
+        "cmdk@^1.0.4",
+        "lucide-react@0.477.0",
+        "@radix-ui/react-dialog@^1.1.4"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/dialog.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/command.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/command.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Command"
+      ],
+      "docs": "Use the command component to create a command menu for your application",
+      "tags": [
+        "command",
+        "menu",
+        "search",
+        "palette"
+      ]
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:ui",
+      "description": "Multi-select component with search, select all, and customizable options",
+      "dependencies": [
+        "lucide-react@0.477.0"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/badge.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/command.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/popover.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/separator.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/multi-select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/multi-select.tsx"
+        },
+        {
+          "path": "registry/ui/multi-select.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/multi-select.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms",
+        "Inputs"
+      ],
+      "docs": "Use the multi-select component for selecting multiple options from a list with search functionality",
+      "tags": [
+        "multi-select",
+        "select",
+        "dropdown",
+        "search",
+        "form"
+      ]
     }
   ]
 }
