@@ -1,0 +1,60 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Dependencies Rule
+
+When adding new items to the [registry.json](mdc:registry.json) file, follow these dependency version guidelines based on our package.json:
+
+## Common UI Dependencies
+- class-variance-authority: 0.7.1
+- clsx: 2.1.1
+- tailwind-merge: 3.0.2
+- tailwindcss-animate: 1.0.7
+
+## Radix UI Components
+- @radix-ui/react-accordion: 1.2.3
+- @radix-ui/react-aspect-ratio: ^1.1.1
+- @radix-ui/react-checkbox: 1.1.4
+- @radix-ui/react-dialog: ^1.1.4
+- @radix-ui/react-icons: 1.3.2
+- @radix-ui/react-label: 2.1.2
+- @radix-ui/react-popover: ^1.1.4
+- @radix-ui/react-radio-group: 1.2.3
+- @radix-ui/react-scroll-area: 1.2.3
+- @radix-ui/react-select: ^2.1.4
+- @radix-ui/react-separator: 1.1.2
+- @radix-ui/react-slider: 1.2.3
+- @radix-ui/react-slot: 1.1.2
+- @radix-ui/react-switch: 1.1.3
+- @radix-ui/react-toast: 1.2.6
+- @radix-ui/react-tooltip: ^1.1.2
+
+## Icon Libraries
+- lucide-react: 0.477.0
+- react-icons: 5.5.0
+
+## Storybook Dependencies
+- @storybook/addon-essentials: 8.6.3
+- @storybook/addon-interactions: 8.6.3
+- @storybook/addon-links: 8.6.3
+- @storybook/addon-themes: 8.6.3
+- @storybook/blocks: 8.6.3
+- @storybook/nextjs: 8.6.3
+- @storybook/react: 8.6.3
+
+## Form Libraries
+- react-hook-form: 7.54.2
+- @hookform/resolvers: 4.1.3
+- zod: 3.24.2
+
+## Animation
+- framer-motion: 12.4.10
+
+## Guidelines for Adding New Components
+1. Always check package.json in this rule for existing dependencies before adding new ones
+2. Use exact version numbers for stability (except where ^ is already used)
+3. When adding registry items, include all required dependency versions
+4. For UI components, always include registryDependencies for utils and other component dependencies
+5. Follow the URL format for external dependencies: "https://sudolabs-io.github.io/sudo-ui-kit/public/r/{componentName}.json" 
