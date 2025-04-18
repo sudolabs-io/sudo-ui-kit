@@ -108,6 +108,21 @@
       ]
     },
     {
+      "name": "LoaderIcon",
+      "type": "registry:component",
+      "description": "A loader icon component",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/LoaderIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/LoaderIcon.tsx"
+        }
+      ]
+    },
+    {
       "name": "badge",
       "type": "registry:ui",
       "description": "A customizable badge component with different variants and shapes",
