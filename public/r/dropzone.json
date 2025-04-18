@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropzone",
+  "type": "registry:ui",
+  "description": "A file upload dropzone component with drag and drop support",
+  "dependencies": [
+    "lucide-react@0.477.0"
+  ],
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/FileIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/TrashIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/UploadIcon.json"
+  ],
+  "files": [
+    {
+      "path": "registry/ui/dropzone.tsx",
+      "content": "import { useRef, useState } from 'react'\nimport { Search } from 'lucide-react'\nimport { FileIcon, TrashIcon, UploadIcon } from 'components/icons'\nimport { Button } from './button'\n\nexport const Dropzone = () => {\n  const [files, setFiles] = useState<File[]>([])\n  const fileInputRef = useRef<HTMLInputElement | null>(null)\n\n  const handleFilesChange = (event: React.ChangeEvent<HTMLInputElement>) => {\n    if (event.target.files && event.target.files.length > 0) {\n      setFiles(Array.from(event.target.files))\n    } else {\n      setFiles([])\n    }\n\n    // clearing current value so the change event is fired also in case the same file(s) are uploaded\n    // eslint-disable-next-line no-param-reassign\n    event.target.value = ''\n  }\n\n  const handleFileRemove = (fileName: string) => {\n    if (files?.length) {\n      setFiles([...files].filter((filter) => filter.name !== fileName))\n    }\n  }\n\n  const handleDrop = (event: React.DragEvent<HTMLLabelElement>) => {\n    event.preventDefault()\n    if (event.dataTransfer.files && event.dataTransfer.files.length > 0) {\n      setFiles(Array.from(event.dataTransfer.files))\n      event.dataTransfer.clearData()\n    }\n  }\n\n  const handleDragOver = (event: React.DragEvent<HTMLLabelElement>) => {\n    event.preventDefault()\n  }\n\n  const handleButtonClick = () => {\n    fileInputRef.current?.click()\n  }\n\n  return (\n    <>\n      <div className=\"flex w-full items-center justify-center\">\n        <label\n          htmlFor=\"dropzone\"\n          className=\"flex h-48 w-full flex-col items-center justify-center rounded-lg bg-muted outline-dashed outline-2 outline-offset-[-1px] outline-input\"\n          onDrop={handleDrop}\n          onDragOver={handleDragOver}\n        >\n          <div className=\"flex flex-col items-center justify-center gap-2\">\n            <UploadIcon className=\"text-muted-foreground\" />\n            <p className=\"text-sm text-popover-foreground\">\n              <span className=\"font-semibold\">Click to upload</span> or drag and drop\n            </p>\n            <p className=\"text-xs font-semibold text-muted-foreground\">Max. File Size: 30MB</p>\n            <Button\n              size=\"xs\"\n              className=\"mt-2 h-[30px] bg-primary font-semibold text-primary-foreground\"\n              onClick={handleButtonClick}\n            >\n              <Search className=\"h-5 w-5\" /> Browse file\n            </Button>\n          </div>\n          <input\n            id=\"dropzone\"\n            type=\"file\"\n            className=\"hidden\"\n            multiple\n            ref={fileInputRef}\n            onChange={handleFilesChange}\n          />\n        </label>\n      </div>\n      {files && (\n        <div className=\"mt-2 flex flex-col gap-2\">\n          {Array.from(files).map(({ name }) => (\n            <div className=\"flex items-center gap-2.5 rounded-md bg-muted p-4\">\n              <FileIcon className=\"text-popover-foreground\" />\n              <p className=\"grow text-popover-foreground\">{name}</p>\n              <TrashIcon\n                className=\"cursor-pointer text-popover-foreground\"\n                onClick={() => {\n                  handleFileRemove(name)\n                }}\n              />\n            </div>\n          ))}\n        </div>\n      )}\n    </>\n  )\n}\n",
+      "type": "registry:ui",
+      "target": "components/ui/dropzone.tsx"
+    },
+    {
+      "path": "registry/ui/dropzone.stories.tsx",
+      "content": "import { Meta, StoryObj } from '@storybook/react'\nimport { Dropzone } from './dropzone'\n\nconst DropzoneStory = () => <Dropzone />\n\ntype Story = StoryObj<typeof Dropzone>\n\nexport const Default: Story = {\n  render: () => <DropzoneStory />,\n}\n\nconst meta: Meta<typeof Dropzone> = {\n  title: 'Components/Dropzone/Dropzone',\n  component: Dropzone,\n}\n\nexport default meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/dropzone.stories.tsx"
+    }
+  ],
+  "docs": "Use the dropzone component for file uploads with drag and drop functionality",
+  "categories": [
+    "UI",
+    "Forms",
+    "Upload"
+  ]
+}

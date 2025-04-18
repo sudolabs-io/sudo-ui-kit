@@ -132,6 +132,30 @@
       ]
     },
     {
+      "name": "FileIcon",
+      "type": "registry:component",
+      "description": "A file icon component for document representations",
+      "files": [
+        {
+          "path": "registry/components/icons/FileIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/FileIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "UploadIcon",
+      "type": "registry:component",
+      "description": "An upload icon component for file upload interactions",
+      "files": [
+        {
+          "path": "registry/components/icons/UploadIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/UploadIcon.tsx"
+        }
+      ]
+    },
+    {
       "name": "badge",
       "type": "registry:ui",
       "description": "A customizable badge component with different variants and shapes",
@@ -473,6 +497,59 @@
         "alert",
         "notification",
         "message"
+      ]
+    },
+    {
+      "name": "dropzone",
+      "type": "registry:ui",
+      "description": "A file upload dropzone component with drag and drop support",
+      "dependencies": [
+        "lucide-react@0.477.0"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/FileIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/TrashIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/UploadIcon.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/dropzone.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dropzone.tsx"
+        },
+        {
+          "path": "registry/ui/dropzone.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dropzone.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms",
+        "Upload"
+      ],
+      "docs": "Use the dropzone component for file uploads with drag and drop functionality",
+      "tags": [
+        "dropzone",
+        "upload",
+        "file",
+        "drag-and-drop"
+      ]
+    },
+    {
+      "name": "TrashIcon",
+      "type": "registry:component",
+      "description": "A trash icon component for deletion actions",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/TrashIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/TrashIcon.tsx"
+        }
       ]
     }
   ]
