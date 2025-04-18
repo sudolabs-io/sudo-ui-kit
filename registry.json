@@ -551,6 +551,38 @@
           "target": "components/icons/TrashIcon.tsx"
         }
       ]
+    },
+    {
+      "name": "file-input",
+      "type": "registry:ui",
+      "description": "A styled file input component with label and description support",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/file-input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/file-input.tsx"
+        },
+        {
+          "path": "registry/ui/file-input.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/file-input.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms",
+        "Upload"
+      ],
+      "docs": "Use the file input component for a styled file upload field with label and description",
+      "tags": [
+        "file-input",
+        "upload",
+        "form",
+        "input"
+      ]
     }
   ]
 }
