@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ClockIcon",
+  "type": "registry:component",
+  "description": "A clock icon component",
+  "registryDependencies": [
+    "IconTypes"
+  ],
+  "files": [
+    {
+      "path": "registry/components/icons/ClockIcon.tsx",
+      "content": "import { IconProps } from './types'\n\nexport const ClockIcon = (props: IconProps) => (\n  <svg\n    xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"24\"\n    height=\"24\"\n    viewBox=\"0 0 24 24\"\n    strokeWidth=\"1.5\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    strokeLinecap=\"round\"\n    strokeLinejoin=\"round\"\n    {...props}\n  >\n    <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\" />\n    <path d=\"M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0\" />\n    <path d=\"M12 12l2 3\" />\n    <path d=\"M12 7v5\" />\n  </svg>\n)\n",
+      "type": "registry:component",
+      "target": "components/icons/ClockIcon.tsx"
+    }
+  ]
+}

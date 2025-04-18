@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "description": "A customizable indicator component with different variants",
   "dependencies": [
-    "class-variance-authority"
+    "class-variance-authority@0.7.1"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/denis-sudolabs/nextjs-shadcn-registry/main/public/r/utils.json"

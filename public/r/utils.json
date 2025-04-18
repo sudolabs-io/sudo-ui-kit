@@ -4,8 +4,8 @@
   "type": "registry:lib",
   "description": "Utility functions for styling and type safety",
   "dependencies": [
-    "clsx",
-    "tailwind-merge"
+    "clsx@2.1.1",
+    "tailwind-merge@3.0.2"
   ],
   "files": [
     {

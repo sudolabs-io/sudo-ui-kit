@@ -64,6 +64,75 @@
           "target": "components/ui/indicator.tsx"
         }
       ]
+    },
+    {
+      "name": "IconTypes",
+      "type": "registry:component",
+      "description": "Type definitions for icon components",
+      "files": [
+        {
+          "path": "registry/components/icons/types.ts",
+          "type": "registry:component",
+          "target": "components/icons/types.ts"
+        }
+      ]
+    },
+    {
+      "name": "CloseIcon",
+      "type": "registry:component",
+      "description": "A close icon component",
+      "registryDependencies": ["IconTypes"],
+      "files": [
+        {
+          "path": "registry/components/icons/CloseIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/CloseIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "ClockIcon",
+      "type": "registry:component",
+      "description": "A clock icon component",
+      "registryDependencies": ["IconTypes"],
+      "files": [
+        {
+          "path": "registry/components/icons/ClockIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/ClockIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "description": "A customizable badge component with different variants and shapes",
+      "dependencies": ["class-variance-authority@0.7.1"],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/denis-sudolabs/nextjs-shadcn-registry/main/public/r/utils.json",
+        "CloseIcon",
+        "ClockIcon"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/badge.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/badge.tsx"
+        },
+        {
+          "path": "registry/ui/badgeStories/badge-pill.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/badgeStories/badge-pill.stories.tsx"
+        },
+        {
+          "path": "registry/ui/badgeStories/badge-square.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/badgeStories/badge-square.stories.tsx"
+        }
+      ],
+      "categories": ["UI", "Data Display"],
+      "docs": "Use the badge component to highlight or indicate status information",
+      "tags": ["badge", "tag", "label", "pill"]
     }
   ]
 }
