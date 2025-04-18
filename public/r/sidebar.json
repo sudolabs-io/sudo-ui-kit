@@ -9,8 +9,8 @@
     "@storybook/react@8.6.3"
   ],
   "registryDependencies": [
-    "https://raw.githubusercontent.com/denis-sudolabs/nextjs-shadcn-registry/main/public/r/utils.json",
-    "https://raw.githubusercontent.com/denis-sudolabs/nextjs-shadcn-registry/main/public/r/indicator.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/indicator.json",
     "button"
   ],
   "files": [
