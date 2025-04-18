@@ -229,6 +229,213 @@
         "action",
         "form"
       ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "description": "A select component with support for custom items and scrolling",
+      "dependencies": [
+        "@radix-ui/react-select@^2.1.4",
+        "lucide-react@0.477.0",
+        "react-hook-form@7.54.2",
+        "@hookform/resolvers@4.1.3",
+        "zod@3.24.2"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/select.tsx"
+        },
+        {
+          "path": "registry/ui/select.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/select.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms",
+        "Inputs"
+      ],
+      "docs": "Use the select component for dropdown selections with various options",
+      "tags": [
+        "select",
+        "dropdown",
+        "input",
+        "form"
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "description": "A calendar component with single, range and multiple date selection",
+      "dependencies": [
+        "react-day-picker@^8.10.1",
+        "@radix-ui/react-icons@1.3.2",
+        "date-fns@^3.0.0"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/select.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/calendar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/calendar.tsx"
+        },
+        {
+          "path": "registry/ui/calendar.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/calendar.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Date",
+        "Forms"
+      ],
+      "docs": "Use the calendar component for date picking with single, range, or multiple selection modes",
+      "tags": [
+        "calendar",
+        "date",
+        "picker",
+        "date-picker"
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "description": "Form components built using React Hook Form for validation and state management",
+      "dependencies": [
+        "react-hook-form@7.54.2",
+        "@radix-ui/react-label@2.1.2",
+        "@radix-ui/react-slot@1.1.2",
+        "class-variance-authority@0.7.1"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/label.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/form.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/form.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms"
+      ],
+      "docs": "Use these form components to build accessible forms with validation using React Hook Form",
+      "tags": [
+        "form",
+        "input",
+        "validation",
+        "react-hook-form"
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it",
+      "dependencies": [
+        "@radix-ui/react-tooltip@^1.1.2"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tooltip.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Display"
+      ],
+      "docs": "Use tooltips to provide additional information about UI elements on hover or focus",
+      "tags": [
+        "tooltip",
+        "popup",
+        "information"
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "description": "A form label component with required indicator and tooltip support",
+      "dependencies": [
+        "@radix-ui/react-label@2.1.2",
+        "class-variance-authority@0.7.1"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/tooltip.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AsterixIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/TooltipIcon.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/label.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/label.tsx"
+        },
+        {
+          "path": "registry/ui/label.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/label.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms"
+      ],
+      "docs": "Use the label component for form inputs with optional and required state indicators",
+      "tags": [
+        "label",
+        "form",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "AsterixIcon",
+      "type": "registry:component",
+      "description": "An asterisk icon component for required indicators",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/AsterixIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/AsterixIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "TooltipIcon",
+      "type": "registry:component",
+      "description": "An information icon component for tooltips",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/TooltipIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/TooltipIcon.tsx"
+        }
+      ]
     }
   ]
 }
