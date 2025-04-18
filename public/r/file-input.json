@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "file-input",
+  "type": "registry:ui",
+  "description": "A styled file input component with label and description support",
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+  ],
+  "files": [
+    {
+      "path": "registry/ui/file-input.tsx",
+      "content": "import * as React from 'react'\nimport { useState } from 'react'\nimport { cn } from 'lib/utils'\n\nconst CHOOSE_A_FILE = 'Choose a file'\n\nexport interface FileInputProps extends React.InputHTMLAttributes<HTMLInputElement> {\n  label?: string\n  description?: string\n}\n\nconst FileInput = React.forwardRef<HTMLInputElement, FileInputProps>(\n  ({ className, label, description, disabled, ...props }, ref) => {\n    const [file, setFile] = useState<File | null>(null)\n\n    const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {\n      if (event.target.files && event.target.files.length > 0) {\n        setFile(event.target.files[0])\n      } else {\n        setFile(null)\n      }\n    }\n\n    return (\n      <div className=\"flex flex-col gap-2\">\n        {label && <div className=\"text-sm font-medium text-foreground\">{label}</div>}\n        <label htmlFor=\"file\" className={disabled ? 'opacity-50' : ''}>\n          <div className=\"flex h-9 text-sm\">\n            <div\n              className={cn(\n                'flex cursor-pointer items-center text-nowrap rounded-l-lg bg-primary px-5 text-primary-foreground',\n                disabled ? '!cursor-default' : '',\n              )}\n            >\n              {CHOOSE_A_FILE}\n              <input\n                id=\"file\"\n                type=\"file\"\n                className=\"hidden\"\n                ref={ref}\n                onChange={handleFileChange}\n                disabled={disabled}\n                {...props}\n              />\n            </div>\n            <div\n              className={cn(\n                'w-full flex items-center rounded-r-lg border border-input bg-background px-5 text-muted-foreground',\n                file && 'text-foreground font-medium',\n              )}\n            >\n              {file ? file.name : 'No file chosen'}\n            </div>\n          </div>\n        </label>\n        {description && <div className=\"text-xs text-muted-foreground\">{description}</div>}\n      </div>\n    )\n  },\n)\nFileInput.displayName = 'FileInput'\n\nexport { FileInput }\n",
+      "type": "registry:ui",
+      "target": "components/ui/file-input.tsx"
+    },
+    {
+      "path": "registry/ui/file-input.stories.tsx",
+      "content": "import { Meta, StoryObj } from '@storybook/react'\nimport { FileInput, FileInputProps } from './file-input'\n\ntype FileInputStoryProps = Pick<FileInputProps, 'disabled'>\n\nconst FileInputStory = (props: FileInputStoryProps) => (\n  <FileInput label=\"Upload file\" description=\"This is a description.\" {...props} />\n)\n\ntype Story = StoryObj<typeof meta>\n\nexport const Default: Story = {}\n\nconst meta: Meta<typeof FileInputStory> = {\n  title: 'Components/FileInput/FileInput',\n  component: FileInputStory,\n  render: (args) => <FileInputStory {...args} />,\n  args: { disabled: false },\n  argTypes: { disabled: { type: 'boolean', defaultValue: false } },\n}\n\nexport default meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/file-input.stories.tsx"
+    }
+  ],
+  "docs": "Use the file input component for a styled file upload field with label and description",
+  "categories": [
+    "UI",
+    "Forms",
+    "Upload"
+  ]
+}
