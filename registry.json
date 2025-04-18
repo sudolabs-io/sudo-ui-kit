@@ -747,6 +747,113 @@
         "search",
         "form"
       ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "description": "A scrollable area with custom scrollbars",
+      "dependencies": [
+        "@radix-ui/react-scroll-area@1.2.3"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/scroll-area.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Layout"
+      ],
+      "docs": "Use the scroll area component to add custom scrollbars to your content",
+      "tags": [
+        "scroll",
+        "scrollbar",
+        "overflow"
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "description": "An input component with support for icons and clearable functionality",
+      "dependencies": [
+        "class-variance-authority@0.7.1",
+        "react-hook-form@7.54.2"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/CloseIcon.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input.tsx"
+        },
+        {
+          "path": "registry/ui/input.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms",
+        "Inputs"
+      ],
+      "docs": "Use the input component for collecting user input in forms",
+      "tags": [
+        "input",
+        "form",
+        "textfield"
+      ]
+    },
+    {
+      "name": "phone-input",
+      "type": "registry:ui",
+      "description": "A phone input component with country selection and formatting",
+      "dependencies": [
+        "react-phone-number-input@^3.4.11",
+        "lucide-react@0.477.0"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/command.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/input.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/popover.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/scroll-area.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/phone-input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/phone-input.tsx"
+        },
+        {
+          "path": "registry/ui/phone-input.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/phone-input.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms",
+        "Inputs"
+      ],
+      "docs": "Use the phone input component for international phone number input with formatting and validation",
+      "tags": [
+        "phone",
+        "input",
+        "international",
+        "form"
+      ]
     }
   ]
 }
