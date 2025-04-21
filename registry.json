@@ -1269,6 +1269,32 @@
         "media",
         "playback"
       ]
+    },
+    {
+      "name": "PlayIcon",
+      "type": "registry:component",
+      "description": "A play icon component for media controls",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/PlayIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/PlayIcon.tsx"
+        }
+      ],
+      "categories": [
+        "Icons",
+        "Media"
+      ],
+      "docs": "Use the PlayIcon component for media playback controls",
+      "tags": [
+        "icon",
+        "play",
+        "media",
+        "controls"
+      ]
     }
   ]
 }
