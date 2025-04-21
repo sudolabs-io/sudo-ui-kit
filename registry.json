@@ -1210,12 +1210,12 @@
         {
           "path": "registry/ui/socialButton.tsx",
           "type": "registry:ui",
-          "target": "components/ui/social-button.tsx"
+          "target": "components/ui/socialButton.tsx"
         },
         {
           "path": "registry/ui/socialButton.stories.tsx",
           "type": "registry:ui",
-          "target": "components/ui/social-button.stories.tsx"
+          "target": "components/ui/socialButton.stories.tsx"
         }
       ],
       "categories": [
