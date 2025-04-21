@@ -863,7 +863,7 @@
         {
           "path": "registry/context/DNDTreeContext.ts",
           "type": "registry:file",
-          "target": "context/DNDTreeContext.tsx"
+          "target": "context/DNDTreeContext.ts"
         }
       ]
     },
