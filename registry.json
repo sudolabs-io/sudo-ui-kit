@@ -854,6 +854,110 @@
         "international",
         "form"
       ]
+    },
+    {
+      "name": "DNDTreeContext",
+      "type": "registry:file",
+      "description": "Context for DND Tree component",
+      "files": [
+        {
+          "path": "registry/context/DNDTreeContext.ts",
+          "type": "registry:file",
+          "target": "context/DNDTreeContext.tsx"
+        }
+      ]
+    },
+    {
+      "name": "useDNDTree",
+      "type": "registry:hook",
+      "description": "Hook for DND Tree component",
+      "files": [
+        {
+          "path": "registry/hooks/useDNDTree.ts",
+          "type": "registry:hook",
+          "target": "hooks/useDNDTree.ts"
+        }
+      ]
+    },
+    {
+      "name": "dnd-tree",
+      "type": "registry:ui",
+      "description": "A drag and drop tree component with support for nested items",
+      "dependencies": [
+        "@dnd-kit/core@^6.1.0",
+        "react-hook-form@7.54.2",
+        "zod@3.24.2",
+        "lodash@4.17.21",
+        "lucide-react@0.477.0",
+        "@hookform/resolvers@4.1.3"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/dialog.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/input.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/DNDTreeContext.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/useDNDTree.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/dnd/dnd-tree.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dnd-tree.tsx"
+        },
+        {
+          "path": "registry/ui/dnd/dnd-tree.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dnd-tree.stories.tsx"
+        },
+        {
+          "path": "registry/ui/dnd/dnd-tree-items.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dnd-tree-items.tsx"
+        },
+        {
+          "path": "registry/ui/dnd/dnd-drag-and-drop.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dnd-drag-and-drop.tsx"
+        },
+        {
+          "path": "registry/ui/dnd/dnd-item-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dnd-item-dialog.tsx"
+        },
+        {
+          "path": "registry/ui/dnd/dnd-delete-item-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dnd-delete-item-dialog.tsx"
+        },
+        {
+          "path": "registry/ui/dnd/utils/dnd.ts",
+          "type": "registry:ui",
+          "target": "components/ui/dnd/utils/dnd.ts"
+        },
+        {
+          "path": "registry/ui/dnd/utils/dnd-tree.ts",
+          "type": "registry:ui",
+          "target": "components/ui/dnd/utils/dnd-tree.ts"
+        },
+        {
+          "path": "registry/ui/dnd/utils/dnd-tree-items.ts",
+          "type": "registry:ui",
+          "target": "components/ui/dnd/utils/dnd-tree-items.ts"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Interaction"
+      ],
+      "docs": "Use the DND Tree component to create interactive tree structures with drag and drop functionality",
+      "tags": [
+        "dnd",
+        "tree",
+        "drag-and-drop",
+        "interactive"
+      ]
     }
   ]
 }
