@@ -1232,6 +1232,43 @@
         "facebook",
         "apple"
       ]
+    },
+    {
+      "name": "video-player",
+      "type": "registry:ui",
+      "description": "A video player component with thumbnail support and custom controls",
+      "dependencies": [
+        "react-player@2.14.1",
+        "@storybook/react@8.6.3"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PlayIcon.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/video-player.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/video-player.tsx"
+        },
+        {
+          "path": "registry/ui/video-player.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/video-player.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Media",
+        "Video"
+      ],
+      "docs": "Use the video player component for video playback with thumbnail support and custom controls",
+      "tags": [
+        "video",
+        "player",
+        "media",
+        "playback"
+      ]
     }
   ]
 }
