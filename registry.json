@@ -1193,6 +1193,45 @@
         "input",
         "form"
       ]
+    },
+    {
+      "name": "social-button",
+      "type": "registry:ui",
+      "description": "A social media button component with support for Google, Facebook, and Apple",
+      "dependencies": [
+        "react-icons@5.5.0",
+        "@storybook/react@8.6.3"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/socialButton.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/social-button.tsx"
+        },
+        {
+          "path": "registry/ui/socialButton.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/social-button.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Buttons",
+        "Social"
+      ],
+      "docs": "Use the social button component for social media authentication with customizable variants",
+      "tags": [
+        "social",
+        "button",
+        "authentication",
+        "google",
+        "facebook",
+        "apple"
+      ]
     }
   ]
 }
