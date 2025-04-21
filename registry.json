@@ -1119,6 +1119,40 @@
         "form",
         "selection"
       ]
+    },
+    {
+      "name": "rating",
+      "type": "registry:ui",
+      "description": "A rating component with customizable icons and hover/click interactions",
+      "dependencies": [
+        "lucide-react@0.477.0"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/rating.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/rating.tsx"
+        },
+        {
+          "path": "registry/ui/rating.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/rating.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Inputs"
+      ],
+      "docs": "Use the rating component to collect user ratings with customizable icons and interactive feedback",
+      "tags": [
+        "rating",
+        "stars",
+        "input",
+        "feedback"
+      ]
     }
   ]
 }
