@@ -884,7 +884,7 @@
       "type": "registry:ui",
       "description": "A drag and drop tree component with support for nested items",
       "dependencies": [
-        "@dnd-kit/core@^6.1.0",
+        "@dnd-kit/core@^6.3.1",
         "react-hook-form@7.54.2",
         "zod@3.24.2",
         "lodash@4.17.21",
@@ -904,32 +904,32 @@
         {
           "path": "registry/ui/dnd/dnd-tree.tsx",
           "type": "registry:ui",
-          "target": "components/ui/dnd-tree.tsx"
+          "target": "components/ui/dnd/dnd-tree.tsx"
         },
         {
           "path": "registry/ui/dnd/dnd-tree.stories.tsx",
           "type": "registry:ui",
-          "target": "components/ui/dnd-tree.stories.tsx"
+          "target": "components/ui/dnd/dnd-tree.stories.tsx"
         },
         {
           "path": "registry/ui/dnd/dnd-tree-items.tsx",
           "type": "registry:ui",
-          "target": "components/ui/dnd-tree-items.tsx"
+          "target": "components/ui/dnd/dnd-tree-items.tsx"
         },
         {
           "path": "registry/ui/dnd/dnd-drag-and-drop.tsx",
           "type": "registry:ui",
-          "target": "components/ui/dnd-drag-and-drop.tsx"
+          "target": "components/ui/dnd/dnd-drag-and-drop.tsx"
         },
         {
           "path": "registry/ui/dnd/dnd-item-dialog.tsx",
           "type": "registry:ui",
-          "target": "components/ui/dnd-item-dialog.tsx"
+          "target": "components/ui/dnd/dnd-item-dialog.tsx"
         },
         {
           "path": "registry/ui/dnd/dnd-delete-item-dialog.tsx",
           "type": "registry:ui",
-          "target": "components/ui/dnd-delete-item-dialog.tsx"
+          "target": "components/ui/dnd/dnd-delete-item-dialog.tsx"
         },
         {
           "path": "registry/ui/dnd/utils/dnd.ts",
