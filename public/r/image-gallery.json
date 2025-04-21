@@ -1,0 +1,49 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "image-gallery",
+  "type": "registry:ui",
+  "description": "A responsive image gallery component with overlay support",
+  "dependencies": [
+    "class-variance-authority@0.7.1"
+  ],
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+  ],
+  "files": [
+    {
+      "path": "registry/ui/image-gallery/image-gallery.tsx",
+      "content": "/* eslint-disable jsx-a11y/no-static-element-interactions */\n/* eslint-disable jsx-a11y/click-events-have-key-events */\nimport { useState } from 'react'\nimport { cn } from 'lib/utils'\nimport LazyImage from 'next/legacy/image'\nimport Lightbox from 'yet-another-react-lightbox'\nimport { AspectRatioBox } from './aspect-ratio-box'\nimport { COLLAGE_HEIGHT, MAX_VISIBLE_PHOTOS_COUNT, SMALL_CELL } from './constants'\nimport { SlideOverlay } from './slide-overlay'\nimport 'yet-another-react-lightbox/styles.css'\n\nconst NUMBER_OF_SMALL_IMAGES_IN_COLLAGE = 3\n\nexport type Image = {\n  src: string\n  alt: string\n}\n\nexport interface ImageGalleryProps {\n  titleImage?: Image\n  images: Image[]\n  className?: string\n}\n\nexport const ImageGallery = ({ titleImage, images, className }: ImageGalleryProps) => {\n  const [slideIndex, setSlideIndex] = useState<number | undefined>(undefined)\n\n  const lightboxImages = [\n    ...(titleImage ? [titleImage] : []),\n    ...images.map(({ src }) => ({ src })),\n  ]\n\n  return (\n    <>\n      <div className={cn(`h-[${COLLAGE_HEIGHT}px]`, 'mb-6 grid grid-cols-4 gap-2.5', className)}>\n        <AspectRatioBox\n          ratio={1}\n          className={cn(`h-[${COLLAGE_HEIGHT}px]`, 'col-span-2 row-span-2 w-full cursor-pointer')}\n        >\n          <div className=\"relative h-full w-full overflow-hidden rounded-[12px] md:rounded-[20px]\">\n            {titleImage && (\n              <LazyImage\n                src={titleImage.src}\n                objectFit=\"cover\"\n                onClick={() => {\n                  setSlideIndex(0)\n                }}\n                placeholder=\"blur\"\n                blurDataURL={titleImage.src}\n                alt={titleImage.alt}\n                layout=\"fill\"\n              />\n            )}\n          </div>\n        </AspectRatioBox>\n        {images.slice(0, NUMBER_OF_SMALL_IMAGES_IN_COLLAGE).map(({ src, alt }, idx) => (\n          <AspectRatioBox\n            // eslint-disable-next-line react/no-array-index-key\n            key={`${idx}-${src}`}\n            ratio={1}\n            className={cn(`h-[${SMALL_CELL}px]`, 'w-full cursor-pointer')}\n          >\n            <div className=\"relative h-full w-full overflow-hidden rounded-[12px] md:rounded-[20px]\">\n              <LazyImage\n                src={src}\n                objectFit=\"cover\"\n                onClick={() => {\n                  setSlideIndex(idx + 1)\n                }}\n                placeholder=\"blur\"\n                blurDataURL={src}\n                alt={alt}\n                layout=\"fill\"\n              />\n            </div>\n          </AspectRatioBox>\n        ))}\n        {images[3] && (\n          <div\n            className=\"relative col-span-1 row-span-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-[12px] md:rounded-[20px]\"\n            onClick={() => {\n              setSlideIndex(4)\n            }}\n          >\n            <AspectRatioBox\n              ratio={1}\n              className={cn(`h-[${SMALL_CELL}px]`, 'w-full cursor-pointer')}\n            >\n              <div className=\"relative h-full w-full\">\n                <LazyImage\n                  src={images[3].src}\n                  objectFit=\"cover\"\n                  placeholder=\"blur\"\n                  blurDataURL={images[3].src}\n                  alt={images[3].alt}\n                  layout=\"fill\"\n                />\n              </div>\n            </AspectRatioBox>\n\n            {lightboxImages.length > MAX_VISIBLE_PHOTOS_COUNT && (\n              <SlideOverlay title={`More (+${lightboxImages.length - MAX_VISIBLE_PHOTOS_COUNT})`} />\n            )}\n          </div>\n        )}\n      </div>\n\n      <Lightbox\n        carousel={{ finite: true }}\n        index={slideIndex}\n        slides={lightboxImages}\n        open={slideIndex !== undefined}\n        close={() => setSlideIndex(undefined)}\n        styles={{\n          container: {\n            background: 'var(--base-background, #09090B)',\n          },\n        }}\n      />\n    </>\n  )\n}\n",
+      "type": "registry:ui",
+      "target": "components/ui/image-gallery/image-gallery.tsx"
+    },
+    {
+      "path": "registry/ui/image-gallery/image-gallery.stories.tsx",
+      "content": "import { Meta, StoryFn } from '@storybook/react'\nimport { Image, ImageGallery, ImageGalleryProps } from './image-gallery'\n\nconst IMAGE_URL = 'https://picsum.photos/id/36/200/300'\n\nconst TitleImage: Image = { src: IMAGE_URL, alt: 'Image' }\nconst Images: Image[] = Array(6)\n  .fill(null)\n  .map(() => ({ src: IMAGE_URL, alt: 'Ordinary image' }))\n\nconst Template: StoryFn<typeof ImageGallery> = (args: ImageGalleryProps) => (\n  <ImageGallery {...args} />\n)\n\nexport const Default = Template.bind({})\nDefault.args = {\n  titleImage: TitleImage,\n  images: Images,\n}\n\nexport default {\n  title: 'Components/ImageGallery/ImageGallery',\n  component: ImageGallery,\n} as Meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/image-gallery/image-gallery.stories.tsx"
+    },
+    {
+      "path": "registry/ui/image-gallery/slide-overlay.tsx",
+      "content": "interface SlideOverlayProps {\n  title: string\n}\n\nexport const SlideOverlay = ({ title }: SlideOverlayProps) => (\n  <div className=\"absolute bottom-0 flex h-full w-full items-center justify-center bg-background/80\">\n    <p className=\"text-lg font-medium leading-[54px] text-foreground\">{title}</p>\n  </div>\n)\n",
+      "type": "registry:ui",
+      "target": "components/ui/image-gallery/slide-overlay.tsx"
+    },
+    {
+      "path": "registry/ui/image-gallery/constants.ts",
+      "content": "export const GAP = 8\nexport const COLLAGE_HEIGHT = 572\nexport const SMALL_CELL = (COLLAGE_HEIGHT - GAP) / 2\nexport const MAX_VISIBLE_PHOTOS_COUNT = 5\n",
+      "type": "registry:ui",
+      "target": "components/ui/image-gallery/constants.ts"
+    },
+    {
+      "path": "registry/ui/image-gallery/aspect-ratio-box.tsx",
+      "content": "import { cn } from 'lib/utils'\n\ninterface Props {\n  ratio?: number\n  children: React.ReactNode\n  className?: string\n}\n\nexport const AspectRatioBox = ({ ratio, children, className }: Props) => {\n  const nonOptionalRation = ratio || 1\n  const paddingTop = `${(1 / nonOptionalRation) * 100}%`\n\n  return (\n    <div className={cn('relative', className)} style={{ paddingTop }}>\n      <div className=\"absolute inset-0\">{children}</div>\n    </div>\n  )\n}\n",
+      "type": "registry:ui",
+      "target": "components/ui/image-gallery/aspect-ratio-box.tsx"
+    }
+  ],
+  "docs": "Use the image gallery component to display a collection of images with responsive layout and overlay support",
+  "categories": [
+    "UI",
+    "Media"
+  ]
+}

@@ -958,6 +958,55 @@
         "drag-and-drop",
         "interactive"
       ]
+    },
+    {
+      "name": "image-gallery",
+      "type": "registry:ui",
+      "description": "A responsive image gallery component with overlay support",
+      "dependencies": [
+        "class-variance-authority@0.7.1"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/image-gallery/image-gallery.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/image-gallery/image-gallery.tsx"
+        },
+        {
+          "path": "registry/ui/image-gallery/image-gallery.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/image-gallery/image-gallery.stories.tsx"
+        },
+        {
+          "path": "registry/ui/image-gallery/slide-overlay.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/image-gallery/slide-overlay.tsx"
+        },
+        {
+          "path": "registry/ui/image-gallery/constants.ts",
+          "type": "registry:ui",
+          "target": "components/ui/image-gallery/constants.ts"
+        },
+        {
+          "path": "registry/ui/image-gallery/aspect-ratio-box.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/image-gallery/aspect-ratio-box.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Media"
+      ],
+      "docs": "Use the image gallery component to display a collection of images with responsive layout and overlay support",
+      "tags": [
+        "gallery",
+        "images",
+        "media",
+        "responsive"
+      ]
     }
   ]
 }
