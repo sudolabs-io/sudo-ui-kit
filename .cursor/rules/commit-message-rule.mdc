@@ -10,7 +10,7 @@ When creating commit messages for component migrations, follow these conventions
 ## New Component Migration
 For new components being added to registry.json:
 ```
-[Component Name] component migration
+Component Name component migration
 - Added component files (component.tsx and stories.tsx)
 - Added component to registry.json with dependencies
 - Added component documentation and metadata
@@ -28,7 +28,7 @@ Rating component migration
 ## Follow-up Changes
 For changes to existing components:
 ```
-fix: [Component Name] component changes
+fix: Component Name component changes
 - Updated component dependencies
 - Fixed component implementation
 - Updated component documentation

@@ -58,3 +58,40 @@ When adding new items to the [registry.json](mdc:registry.json) file, follow the
 3. When adding registry items, include all required dependency versions
 4. For UI components, always include registryDependencies for utils and other component dependencies
 5. Follow the URL format for external dependencies: "https://sudolabs-io.github.io/sudo-ui-kit/public/r/{componentName}.json" 
+
+## Target File Naming Convention
+When specifying the target path in the files array, follow these rules:
+1. The target filename should match the source filename exactly
+2. The target path should maintain the same directory structure as the source
+3. Use kebab-case for all filenames
+
+Example:
+```json
+{
+  "files": [
+    {
+      "path": "registry/ui/video-player.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/video-player.tsx"
+    }
+  ]
+}
+```
+
+Incorrect examples:
+```json
+{
+  "files": [
+    {
+      "path": "registry/ui/video-player.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/VideoPlayer.tsx"  // Wrong: PascalCase
+    },
+    {
+      "path": "registry/ui/video-player.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/videoplayer.tsx"  // Wrong: no hyphen
+    }
+  ]
+}
+``` 
