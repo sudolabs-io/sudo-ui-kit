@@ -1007,6 +1007,79 @@
         "media",
         "responsive"
       ]
+    },
+    {
+      "name": "pill",
+      "type": "registry:ui",
+      "description": "A pill component that extends button with toggle state support",
+      "dependencies": [
+        "class-variance-authority@0.7.1"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/pill.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/pill.tsx"
+        },
+        {
+          "path": "registry/ui/pill.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/pill.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Navigation"
+      ],
+      "docs": "Use the pill component for filterable or selectable items in a row",
+      "tags": [
+        "pill",
+        "button",
+        "filter",
+        "tag"
+      ]
+    },
+    {
+      "name": "pill-row",
+      "type": "registry:ui",
+      "description": "A horizontally scrollable row of pills with navigation buttons",
+      "dependencies": [
+        "@radix-ui/react-scroll-area@1.2.3",
+        "lucide-react@0.477.0",
+        "class-variance-authority@0.7.1"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/pill.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/pill-row.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/pill-row.tsx"
+        },
+        {
+          "path": "registry/ui/pill-row.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/pill-row.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Navigation"
+      ],
+      "docs": "Use the pill row component to display a horizontally scrollable list of pills with navigation controls",
+      "tags": [
+        "pill-row",
+        "scroll",
+        "navigation",
+        "horizontal"
+      ]
     }
   ]
 }
