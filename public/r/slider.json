@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider",
+  "type": "registry:ui",
+  "description": "A slider component with range support and form integration",
+  "dependencies": [
+    "@radix-ui/react-slider@1.2.3",
+    "react-hook-form@7.54.2",
+    "@hookform/resolvers@4.1.3",
+    "zod@3.24.2",
+    "@storybook/react@8.6.3"
+  ],
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json"
+  ],
+  "files": [
+    {
+      "path": "registry/ui/slider.tsx",
+      "content": "import * as React from 'react'\nimport * as SliderPrimitive from '@radix-ui/react-slider'\nimport { cn } from 'lib/utils'\n\nconst Slider = React.forwardRef<\n  React.ElementRef<typeof SliderPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root> & { isRange?: boolean }\n>(({ className, isRange, ...props }, ref) => (\n  <SliderPrimitive.Root\n    ref={ref}\n    className={cn('relative flex w-full touch-none select-none items-center', className)}\n    {...props}\n  >\n    <SliderPrimitive.Track className=\"relative h-2 w-full grow overflow-hidden rounded-full bg-secondary\">\n      <SliderPrimitive.Range className=\"absolute h-full bg-primary\" />\n    </SliderPrimitive.Track>\n    <SliderPrimitive.Thumb className=\"block h-5 w-5 rounded-full border-2 border-primary bg-background ring-offset-background drop-shadow-sm transition-colors focus-visible:outline-none disabled:pointer-events-none\" />\n    {isRange && (\n      <SliderPrimitive.Thumb className=\"block h-5 w-5 rounded-full border-2 border-primary bg-background ring-offset-background drop-shadow-sm transition-colors focus-visible:outline-none disabled:pointer-events-none\" />\n    )}\n  </SliderPrimitive.Root>\n))\nSlider.displayName = SliderPrimitive.Root.displayName\n\nexport { Slider }\n",
+      "type": "registry:ui",
+      "target": "components/ui/slider.tsx"
+    },
+    {
+      "path": "registry/ui/slider.stories.tsx",
+      "content": "import { useForm } from 'react-hook-form'\nimport { zodResolver } from '@hookform/resolvers/zod'\nimport { Meta, StoryObj } from '@storybook/react'\nimport { z } from 'zod'\nimport { Form, FormControl, FormDescription, FormField, FormItem, FormLabel } from './form'\nimport { Slider } from './slider'\n\nconst formSchema = z.object({\n  amount: z.number().array().optional(),\n})\n\nconst SliderStory = () => {\n  const formMethods = useForm<z.infer<typeof formSchema>>({\n    resolver: zodResolver(formSchema),\n    defaultValues: {\n      amount: [30, 70],\n    },\n  })\n\n  return (\n    <Form {...formMethods}>\n      <form\n        onSubmit={(e) => {\n          e.preventDefault()\n          void formMethods.handleSubmit((formData) => console.log(formData))\n        }}\n        className=\"space-y-6\"\n      >\n        <FormField\n          control={formMethods.control}\n          name=\"amount\"\n          render={({ field }) => (\n            <FormItem className=\"flex flex-row items-start space-x-2 space-y-0 p-4\">\n              <FormControl>\n                <Slider\n                  {...field}\n                  isRange\n                  onValueChange={field.onChange}\n                  min={0}\n                  max={1000}\n                  step={1}\n                />\n              </FormControl>\n              <div className=\"space-y-1 leading-none\">\n                <FormLabel>Accept amount and conditions</FormLabel>\n                <FormDescription>\n                  You agree to our Terms of Service and Privacy Policy.\n                </FormDescription>\n              </div>\n            </FormItem>\n          )}\n        />\n      </form>\n    </Form>\n  )\n}\n\ntype Story = StoryObj<typeof Slider>\n\nexport const Default: Story = {\n  render: () => <SliderStory />,\n}\n\nconst meta: Meta<typeof Slider> = {\n  title: 'Components/Slider/Slider',\n  component: Slider,\n}\n\nexport default meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/slider.stories.tsx"
+    }
+  ],
+  "docs": "Use the slider component for range selection with form integration support",
+  "categories": [
+    "UI",
+    "Forms",
+    "Inputs"
+  ]
+}
