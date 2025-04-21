@@ -1,0 +1,50 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Commit Message Rule
+
+When creating commit messages for component migrations, follow these conventions:
+
+## New Component Migration
+For new components being added to registry.json:
+```
+[Component Name] component migration
+- Added component files (component.tsx and stories.tsx)
+- Added component to registry.json with dependencies
+- Added component documentation and metadata
+- Other needed description
+```
+
+Example:
+```
+Rating component migration
+- Added rating.tsx and rating.stories.tsx
+- Added rating to registry.json with lucide-react dependency
+- Added rating documentation and metadata
+```
+
+## Follow-up Changes
+For changes to existing components:
+```
+fix: [Component Name] component changes
+- Updated component dependencies
+- Fixed component implementation
+- Updated component documentation
+```
+
+Example:
+```
+fix: Button component changes
+- Updated button dependencies to latest versions
+- Fixed button variant styles
+- Updated button documentation with new examples
+```
+
+## Guidelines
+1. Component names should be in PascalCase in the commit title
+2. Use bullet points for clear, concise change descriptions
+3. Keep bullet points focused on the main changes
+4. Include both implementation and documentation changes
+5. For follow-up changes, always start with "fix:" prefix 
