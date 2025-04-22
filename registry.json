@@ -1238,7 +1238,7 @@
       "type": "registry:ui",
       "description": "A video player component with thumbnail support and custom controls",
       "dependencies": [
-        "react-player@2.14.1",
+        "react-player@^2.16.0",
         "@storybook/react@8.6.3"
       ],
       "registryDependencies": [
