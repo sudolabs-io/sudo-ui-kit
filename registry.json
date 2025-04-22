@@ -25,7 +25,7 @@
       "registryDependencies": [
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/indicator.json",
-        "button"
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json"
       ],
       "dependencies": [
         "react-icons@5.5.0",
