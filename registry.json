@@ -13,7 +13,7 @@
       ],
       "files": [
         {
-          "path": "registry/utils/utils.ts",
+          "path": "src/lib/utils.ts",
           "type": "registry:lib",
           "target": "lib/utils.ts"
         }
@@ -35,7 +35,6 @@
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PieChartIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SettingsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ShoppingCartIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/WorldIcon.json"
       ],
       "dependencies": [
@@ -45,12 +44,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/sidebar/sidebar.tsx",
+          "path": "src/components/ui/sidebar.tsx",
           "type": "registry:ui",
           "target": "components/ui/sidebar.tsx"
         },
         {
-          "path": "registry/ui/sidebar/sidebar.stories.tsx",
+          "path": "src/components/ui/sidebar.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/sidebar.stories.tsx"
         }
@@ -79,7 +78,7 @@
       ],
       "files": [
         {
-          "path": "registry/ui/indicator.tsx",
+          "path": "src/components/ui/indicator.tsx",
           "type": "registry:ui",
           "target": "components/ui/indicator.tsx"
         }
@@ -91,7 +90,7 @@
       "description": "Type definitions for icon components",
       "files": [
         {
-          "path": "registry/components/icons/types.ts",
+          "path": "src/components/icons/types.ts",
           "type": "registry:component",
           "target": "components/icons/types.ts"
         }
@@ -106,7 +105,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/CloseIcon.tsx",
+          "path": "src/components/icons/CloseIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/CloseIcon.tsx"
         }
@@ -121,7 +120,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/ClockIcon.tsx",
+          "path": "src/components/icons/ClockIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/ClockIcon.tsx"
         }
@@ -136,7 +135,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/LoaderIcon.tsx",
+          "path": "src/components/icons/LoaderIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/LoaderIcon.tsx"
         }
@@ -148,7 +147,7 @@
       "description": "A file icon component for document representations",
       "files": [
         {
-          "path": "registry/components/icons/FileIcon.tsx",
+          "path": "src/components/icons/FileIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/FileIcon.tsx"
         }
@@ -160,7 +159,7 @@
       "description": "An upload icon component for file upload interactions",
       "files": [
         {
-          "path": "registry/components/icons/UploadIcon.tsx",
+          "path": "src/components/icons/UploadIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/UploadIcon.tsx"
         }
@@ -181,17 +180,17 @@
       ],
       "files": [
         {
-          "path": "registry/ui/badge.tsx",
+          "path": "src/components/ui/badge.tsx",
           "type": "registry:ui",
           "target": "components/ui/badge.tsx"
         },
         {
-          "path": "registry/ui/badgeStories/badge-pill.stories.tsx",
+          "path": "src/components/ui/badgeStories/badge-pill.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/badgeStories/badge-pill.stories.tsx"
         },
         {
-          "path": "registry/ui/badgeStories/badge-square.stories.tsx",
+          "path": "src/components/ui/badgeStories/badge-square.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/badgeStories/badge-square.stories.tsx"
         }
@@ -223,32 +222,32 @@
       ],
       "files": [
         {
-          "path": "registry/ui/button.tsx",
+          "path": "src/components/ui/button.tsx",
           "type": "registry:ui",
           "target": "components/ui/button.tsx"
         },
         {
-          "path": "registry/ui/buttonStories/variants.stories.tsx",
+          "path": "src/components/ui/buttonStories/variants.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/buttonStories/variants.stories.tsx"
         },
         {
-          "path": "registry/ui/buttonStories/loading.stories.tsx",
+          "path": "src/components/ui/buttonStories/loading.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/buttonStories/loading.stories.tsx"
         },
         {
-          "path": "registry/ui/buttonStories/textOnly.stories.tsx",
+          "path": "src/components/ui/buttonStories/textOnly.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/buttonStories/textOnly.stories.tsx"
         },
         {
-          "path": "registry/ui/buttonStories/textWithIcon.stories.tsx",
+          "path": "src/components/ui/buttonStories/textWithIcon.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/buttonStories/textWithIcon.stories.tsx"
         },
         {
-          "path": "registry/ui/buttonStories/iconOnly.stories.tsx",
+          "path": "src/components/ui/buttonStories/iconOnly.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/buttonStories/iconOnly.stories.tsx"
         }
@@ -282,12 +281,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/select.tsx",
+          "path": "src/components/ui/select.tsx",
           "type": "registry:ui",
           "target": "components/ui/select.tsx"
         },
         {
-          "path": "registry/ui/select.stories.tsx",
+          "path": "src/components/ui/select.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/select.stories.tsx"
         }
@@ -321,12 +320,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/calendar.tsx",
+          "path": "src/components/ui/calendar.tsx",
           "type": "registry:ui",
           "target": "components/ui/calendar.tsx"
         },
         {
-          "path": "registry/ui/calendar.stories.tsx",
+          "path": "src/components/ui/calendar.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/calendar.stories.tsx"
         }
@@ -360,7 +359,7 @@
       ],
       "files": [
         {
-          "path": "registry/ui/form.tsx",
+          "path": "src/components/ui/form.tsx",
           "type": "registry:ui",
           "target": "components/ui/form.tsx"
         }
@@ -389,7 +388,7 @@
       ],
       "files": [
         {
-          "path": "registry/ui/tooltip.tsx",
+          "path": "src/components/ui/tooltip.tsx",
           "type": "registry:ui",
           "target": "components/ui/tooltip.tsx"
         }
@@ -421,12 +420,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/label.tsx",
+          "path": "src/components/ui/label.tsx",
           "type": "registry:ui",
           "target": "components/ui/label.tsx"
         },
         {
-          "path": "registry/ui/label.stories.tsx",
+          "path": "src/components/ui/label.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/label.stories.tsx"
         }
@@ -451,7 +450,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/AsterixIcon.tsx",
+          "path": "src/components/icons/AsterixIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/AsterixIcon.tsx"
         }
@@ -466,7 +465,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/TooltipIcon.tsx",
+          "path": "src/components/icons/TooltipIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/TooltipIcon.tsx"
         }
@@ -487,12 +486,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/callout.tsx",
+          "path": "src/components/ui/callout.tsx",
           "type": "registry:ui",
           "target": "components/ui/callout.tsx"
         },
         {
-          "path": "registry/ui/callout.stories.tsx",
+          "path": "src/components/ui/callout.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/callout.stories.tsx"
         }
@@ -525,12 +524,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/dropzone.tsx",
+          "path": "src/components/ui/dropzone.tsx",
           "type": "registry:ui",
           "target": "components/ui/dropzone.tsx"
         },
         {
-          "path": "registry/ui/dropzone.stories.tsx",
+          "path": "src/components/ui/dropzone.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/dropzone.stories.tsx"
         }
@@ -557,7 +556,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/TrashIcon.tsx",
+          "path": "src/components/icons/TrashIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/TrashIcon.tsx"
         }
@@ -572,12 +571,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/file-input.tsx",
+          "path": "src/components/ui/file-input.tsx",
           "type": "registry:ui",
           "target": "components/ui/file-input.tsx"
         },
         {
-          "path": "registry/ui/file-input.stories.tsx",
+          "path": "src/components/ui/file-input.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/file-input.stories.tsx"
         }
@@ -607,12 +606,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/separator.tsx",
+          "path": "src/components/ui/separator.tsx",
           "type": "registry:ui",
           "target": "components/ui/separator.tsx"
         },
         {
-          "path": "registry/ui/separator.stories.tsx",
+          "path": "src/components/ui/separator.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/separator.stories.tsx"
         }
@@ -640,7 +639,7 @@
       ],
       "files": [
         {
-          "path": "registry/ui/popover.tsx",
+          "path": "src/components/ui/popover.tsx",
           "type": "registry:ui",
           "target": "components/ui/popover.tsx"
         }
@@ -669,7 +668,7 @@
       ],
       "files": [
         {
-          "path": "registry/ui/dialog.tsx",
+          "path": "src/components/ui/dialog.tsx",
           "type": "registry:ui",
           "target": "components/ui/dialog.tsx"
         }
@@ -700,7 +699,7 @@
       ],
       "files": [
         {
-          "path": "registry/ui/command.tsx",
+          "path": "src/components/ui/command.tsx",
           "type": "registry:ui",
           "target": "components/ui/command.tsx"
         }
@@ -735,12 +734,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/multi-select.tsx",
+          "path": "src/components/ui/multi-select.tsx",
           "type": "registry:ui",
           "target": "components/ui/multi-select.tsx"
         },
         {
-          "path": "registry/ui/multi-select.stories.tsx",
+          "path": "src/components/ui/multi-select.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/multi-select.stories.tsx"
         }
@@ -771,7 +770,7 @@
       ],
       "files": [
         {
-          "path": "registry/ui/scroll-area.tsx",
+          "path": "src/components/ui/scroll-area.tsx",
           "type": "registry:ui",
           "target": "components/ui/scroll-area.tsx"
         }
@@ -802,12 +801,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/input.tsx",
+          "path": "src/components/ui/input.tsx",
           "type": "registry:ui",
           "target": "components/ui/input.tsx"
         },
         {
-          "path": "registry/ui/input.stories.tsx",
+          "path": "src/components/ui/input.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/input.stories.tsx"
         }
@@ -843,12 +842,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/phone-input.tsx",
+          "path": "src/components/ui/phone-input.tsx",
           "type": "registry:ui",
           "target": "components/ui/phone-input.tsx"
         },
         {
-          "path": "registry/ui/phone-input.stories.tsx",
+          "path": "src/components/ui/phone-input.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/phone-input.stories.tsx"
         }
@@ -872,7 +871,7 @@
       "description": "Context for DND Tree component",
       "files": [
         {
-          "path": "registry/context/DNDTreeContext.ts",
+          "path": "src/context/DNDTreeContext.ts",
           "type": "registry:file",
           "target": "context/DNDTreeContext.ts"
         }
@@ -884,7 +883,7 @@
       "description": "Hook for DND Tree component",
       "files": [
         {
-          "path": "registry/hooks/useDNDTree.ts",
+          "path": "src/hooks/useDNDTree.ts",
           "type": "registry:hook",
           "target": "hooks/useDNDTree.ts"
         }
@@ -909,53 +908,59 @@
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/input.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/DNDTreeContext.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/useDNDTree.json"
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/useDNDTree.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/constants.json"
       ],
       "files": [
         {
-          "path": "registry/ui/dnd/dnd-tree.tsx",
+          "path": "src/components/ui/dnd/dnd-tree.tsx",
           "type": "registry:ui",
           "target": "components/ui/dnd/dnd-tree.tsx"
         },
         {
-          "path": "registry/ui/dnd/dnd-tree.stories.tsx",
+          "path": "src/components/ui/dnd/dnd-tree.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/dnd/dnd-tree.stories.tsx"
         },
         {
-          "path": "registry/ui/dnd/dnd-tree-items.tsx",
+          "path": "src/components/ui/dnd/dnd-tree-items.tsx",
           "type": "registry:ui",
           "target": "components/ui/dnd/dnd-tree-items.tsx"
         },
         {
-          "path": "registry/ui/dnd/dnd-drag-and-drop.tsx",
+          "path": "src/components/ui/dnd/dnd-drag-and-drop.tsx",
           "type": "registry:ui",
           "target": "components/ui/dnd/dnd-drag-and-drop.tsx"
         },
         {
-          "path": "registry/ui/dnd/dnd-item-dialog.tsx",
+          "path": "src/components/ui/dnd/dnd-item-dialog.tsx",
           "type": "registry:ui",
           "target": "components/ui/dnd/dnd-item-dialog.tsx"
         },
         {
-          "path": "registry/ui/dnd/dnd-delete-item-dialog.tsx",
+          "path": "src/components/ui/dnd/dnd-delete-item-dialog.tsx",
           "type": "registry:ui",
           "target": "components/ui/dnd/dnd-delete-item-dialog.tsx"
         },
         {
-          "path": "registry/ui/dnd/utils/dnd.ts",
+          "path": "src/components/ui/dnd/utils/dnd.ts",
           "type": "registry:ui",
           "target": "components/ui/dnd/utils/dnd.ts"
         },
         {
-          "path": "registry/ui/dnd/utils/dnd-tree.ts",
+          "path": "src/components/ui/dnd/utils/dnd-tree.ts",
           "type": "registry:ui",
           "target": "components/ui/dnd/utils/dnd-tree.ts"
         },
         {
-          "path": "registry/ui/dnd/utils/dnd-tree-items.ts",
+          "path": "src/components/ui/dnd/utils/dnd-tree-items.ts",
           "type": "registry:ui",
           "target": "components/ui/dnd/utils/dnd-tree-items.ts"
+        },
+        {
+          "path": "src/components/ui/constants.ts",
+          "type": "registry:ui",
+          "target": "components/ui/constants.ts"
         }
       ],
       "categories": [
@@ -982,27 +987,27 @@
       ],
       "files": [
         {
-          "path": "registry/ui/image-gallery/image-gallery.tsx",
+          "path": "src/components/ui/image-gallery/image-gallery.tsx",
           "type": "registry:ui",
           "target": "components/ui/image-gallery/image-gallery.tsx"
         },
         {
-          "path": "registry/ui/image-gallery/image-gallery.stories.tsx",
+          "path": "src/components/ui/image-gallery/image-gallery.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/image-gallery/image-gallery.stories.tsx"
         },
         {
-          "path": "registry/ui/image-gallery/slide-overlay.tsx",
+          "path": "src/components/ui/image-gallery/slide-overlay.tsx",
           "type": "registry:ui",
           "target": "components/ui/image-gallery/slide-overlay.tsx"
         },
         {
-          "path": "registry/ui/image-gallery/constants.ts",
+          "path": "src/components/ui/image-gallery/constants.ts",
           "type": "registry:ui",
           "target": "components/ui/image-gallery/constants.ts"
         },
         {
-          "path": "registry/ui/image-gallery/aspect-ratio-box.tsx",
+          "path": "src/components/ui/image-gallery/aspect-ratio-box.tsx",
           "type": "registry:ui",
           "target": "components/ui/image-gallery/aspect-ratio-box.tsx"
         }
@@ -1032,12 +1037,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/pill.tsx",
+          "path": "src/components/ui/pill.tsx",
           "type": "registry:ui",
           "target": "components/ui/pill.tsx"
         },
         {
-          "path": "registry/ui/pill.stories.tsx",
+          "path": "src/components/ui/pill.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/pill.stories.tsx"
         }
@@ -1070,12 +1075,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/pill-row.tsx",
+          "path": "src/components/ui/pill-row.tsx",
           "type": "registry:ui",
           "target": "components/ui/pill-row.tsx"
         },
         {
-          "path": "registry/ui/pill-row.stories.tsx",
+          "path": "src/components/ui/pill-row.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/pill-row.stories.tsx"
         }
@@ -1109,12 +1114,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/radio-group.tsx",
+          "path": "src/components/ui/radio-group.tsx",
           "type": "registry:ui",
           "target": "components/ui/radio-group.tsx"
         },
         {
-          "path": "registry/ui/radio-group.stories.tsx",
+          "path": "src/components/ui/radio-group.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/radio-group.stories.tsx"
         }
@@ -1143,12 +1148,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/rating.tsx",
+          "path": "src/components/ui/rating.tsx",
           "type": "registry:ui",
           "target": "components/ui/rating.tsx"
         },
         {
-          "path": "registry/ui/rating.stories.tsx",
+          "path": "src/components/ui/rating.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/rating.stories.tsx"
         }
@@ -1182,12 +1187,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/slider.tsx",
+          "path": "src/components/ui/slider.tsx",
           "type": "registry:ui",
           "target": "components/ui/slider.tsx"
         },
         {
-          "path": "registry/ui/slider.stories.tsx",
+          "path": "src/components/ui/slider.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/slider.stories.tsx"
         }
@@ -1219,12 +1224,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/socialButton.tsx",
+          "path": "src/components/ui/socialButton.tsx",
           "type": "registry:ui",
           "target": "components/ui/socialButton.tsx"
         },
         {
-          "path": "registry/ui/socialButton.stories.tsx",
+          "path": "src/components/ui/socialButton.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/socialButton.stories.tsx"
         }
@@ -1258,12 +1263,12 @@
       ],
       "files": [
         {
-          "path": "registry/ui/video-player.tsx",
+          "path": "src/components/ui/video-player.tsx",
           "type": "registry:ui",
           "target": "components/ui/video-player.tsx"
         },
         {
-          "path": "registry/ui/video-player.stories.tsx",
+          "path": "src/components/ui/video-player.stories.tsx",
           "type": "registry:ui",
           "target": "components/ui/video-player.stories.tsx"
         }
@@ -1290,7 +1295,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/PlayIcon.tsx",
+          "path": "src/components/icons/PlayIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/PlayIcon.tsx"
         }
@@ -1316,7 +1321,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/ComponentsIcon.tsx",
+          "path": "src/components/icons/ComponentsIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/ComponentsIcon.tsx"
         }
@@ -1331,7 +1336,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/InboxIcon.tsx",
+          "path": "src/components/icons/InboxIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/InboxIcon.tsx"
         }
@@ -1346,7 +1351,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/LifeBuoyIcon.tsx",
+          "path": "src/components/icons/LifeBuoyIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/LifeBuoyIcon.tsx"
         }
@@ -1361,7 +1366,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/LockIcon.tsx",
+          "path": "src/components/icons/LockIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/LockIcon.tsx"
         }
@@ -1376,7 +1381,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/PieChartIcon.tsx",
+          "path": "src/components/icons/PieChartIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/PieChartIcon.tsx"
         }
@@ -1391,7 +1396,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/SettingsIcon.tsx",
+          "path": "src/components/icons/SettingsIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/SettingsIcon.tsx"
         }
@@ -1406,7 +1411,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/ShoppingCartIcon.tsx",
+          "path": "src/components/icons/ShoppingCartIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/ShoppingCartIcon.tsx"
         }
@@ -1421,7 +1426,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/WorldIcon.tsx",
+          "path": "src/components/icons/WorldIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/WorldIcon.tsx"
         }
@@ -1436,7 +1441,7 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/SudolabsIcon.tsx",
+          "path": "src/components/icons/SudolabsIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/SudolabsIcon.tsx"
         }
@@ -1451,9 +1456,88 @@
       ],
       "files": [
         {
-          "path": "registry/components/icons/AdjustmentsIcon.tsx",
+          "path": "src/components/icons/AdjustmentsIcon.tsx",
           "type": "registry:component",
           "target": "components/icons/AdjustmentsIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "constants",
+      "type": "registry:ui",
+      "description": "Constants used across UI components",
+      "files": [
+        {
+          "path": "src/components/ui/constants.ts",
+          "type": "registry:ui",
+          "target": "components/ui/constants.ts"
+        }
+      ]
+    },
+    {
+      "name": "all",
+      "type": "registry:file",
+      "description": "All components in the registry",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AdjustmentsIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/image-gallery.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/select.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AsterixIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/InboxIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/separator.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/badge.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/indicator.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SettingsIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/input.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ShoppingCartIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/calendar.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/label.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/sidebar.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/callout.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LifeBuoyIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/slider.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ClockIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LoaderIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/social-button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/CloseIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LockIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/command.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/multi-select.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/tooltip.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ComponentsIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/phone-input.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/TooltipIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/dialog.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PieChartIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/TrashIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/dnd-tree.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/pill-row.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/UploadIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/DNDTreeContext.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/pill.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/useDNDTree.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/dropzone.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PlayIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/file-input.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/popover.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/video-player.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/FileIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/radio-group.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/WorldIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/rating.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/scroll-area.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/constants.json"
+      ],
+      "files": [
+        {
+          "path": "registry/all.txt",
+          "type": "registry:file",
+          "target": "registry/all.txt"
         }
       ]
     }

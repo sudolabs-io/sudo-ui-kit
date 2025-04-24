@@ -1,9 +1,9 @@
 import { Meta, StoryFn } from '@storybook/react'
-import { CloseIcon } from 'components/icons'
+import { CloseIcon } from 'components/icons/CloseIcon'
 import { ClockIcon } from 'components/icons/ClockIcon'
 import { Badge, BadgeProps } from '../badge'
 
-const Template: StoryFn<typeof Badge> = (args: BadgeProps) => <Badge {...args} shape="pill" />
+const Template: StoryFn<typeof Badge> = (args: BadgeProps) => <Badge {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
@@ -29,6 +29,6 @@ Outline.args = {
 }
 
 export default {
-  title: 'Components/Badge/Pill',
+  title: 'Components/Badge/Square',
   component: Badge,
 } as Meta

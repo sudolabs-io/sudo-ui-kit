@@ -11,7 +11,7 @@
   ],
   "files": [
     {
-      "path": "registry/ui/indicator.tsx",
+      "path": "src/components/ui/indicator.tsx",
       "content": "import React from 'react'\nimport { cva, VariantProps } from 'class-variance-authority'\nimport { cn } from 'lib/utils'\n\nconst indicatorVariants = cva('', {\n  variants: {\n    variant: {\n      default: '',\n      number: '',\n    },\n    size: {\n      default: '',\n    },\n  },\n  defaultVariants: {\n    variant: 'default',\n    size: 'default',\n  },\n})\n\nexport interface IndicatorProps\n  extends React.HtmlHTMLAttributes<HTMLDivElement>,\n    VariantProps<typeof indicatorVariants> {}\n\nconst Indicator = React.forwardRef<HTMLDivElement, IndicatorProps>(\n  ({ className, variant, size, children, ...props }, ref) => (\n    <div\n      className={cn(\n        indicatorVariants({ variant }),\n        'min-w-4 max-w-fit rounded-full bg-destructive px-2.5 py-0.5 text-foreground text-center ',\n        className,\n      )}\n      ref={ref}\n      {...props}\n    >\n      {children}\n    </div>\n  ),\n)\nexport default Indicator\n",
       "type": "registry:ui",
       "target": "components/ui/indicator.tsx"

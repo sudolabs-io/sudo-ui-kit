@@ -8,7 +8,7 @@
   ],
   "files": [
     {
-      "path": "registry/components/icons/InboxIcon.tsx",
+      "path": "src/components/icons/InboxIcon.tsx",
       "content": "import { SVGProps } from 'react'\n\nexport const InboxIcon = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"24\"\n    height=\"24\"\n    viewBox=\"0 0 24 24\"\n    strokeWidth=\"1.5\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    strokeLinecap=\"round\"\n    strokeLinejoin=\"round\"\n    {...props}\n  >\n    <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\" />\n    <path d=\"M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z\" />\n    <path d=\"M4 13h3l3 3h4l3 -3h3\" />\n  </svg>\n)\n",
       "type": "registry:component",
       "target": "components/icons/InboxIcon.tsx"

@@ -5,7 +5,7 @@
   "description": "Hook for DND Tree component",
   "files": [
     {
-      "path": "registry/hooks/useDNDTree.ts",
+      "path": "src/hooks/useDNDTree.ts",
       "content": "import { useContext } from 'react'\nimport { DNDTreeContext } from 'context/DNDTreeContext'\n\nexport const useDNDTree = () => useContext(DNDTreeContext)\n",
       "type": "registry:hook",
       "target": "hooks/useDNDTree.ts"

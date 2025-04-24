@@ -5,7 +5,7 @@
   "description": "Context for DND Tree component",
   "files": [
     {
-      "path": "registry/context/DNDTreeContext.ts",
+      "path": "src/context/DNDTreeContext.ts",
       "content": "import { createContext, Dispatch, SetStateAction } from 'react'\n\nexport interface TreeItem {\n  id: string\n  name: string\n  children?: TreeItem[]\n}\n\nexport interface DNDTreeContextProps {\n  treeItems: TreeItem[]\n  setTreeItems: Dispatch<SetStateAction<TreeItem[]>>\n}\n\nexport const DNDTreeContext = createContext<DNDTreeContextProps>({\n  treeItems: [],\n  setTreeItems: () => {},\n})\n",
       "type": "registry:file",
       "target": "context/DNDTreeContext.ts"

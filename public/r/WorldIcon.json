@@ -8,7 +8,7 @@
   ],
   "files": [
     {
-      "path": "registry/components/icons/WorldIcon.tsx",
+      "path": "src/components/icons/WorldIcon.tsx",
       "content": "import { SVGProps } from 'react'\n\nexport const WorldIcon = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"24\"\n    height=\"24\"\n    viewBox=\"0 0 24 24\"\n    strokeWidth=\"1.5\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    strokeLinecap=\"round\"\n    strokeLinejoin=\"round\"\n    {...props}\n  >\n    <path d=\"M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0\" />\n    <path d=\"M3.6 9h16.8\" />\n    <path d=\"M3.6 15h16.8\" />\n    <path d=\"M11.5 3a17 17 0 0 0 0 18\" />\n    <path d=\"M12.5 3a17 17 0 0 1 0 18\" />\n  </svg>\n)\n",
       "type": "registry:component",
       "target": "components/icons/WorldIcon.tsx"
