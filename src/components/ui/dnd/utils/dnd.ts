@@ -1,5 +1,5 @@
 import { TreeItem } from 'context/DNDTreeContext'
-import { LAST_DROPZONE_ID, TREE_ITEM_DROPZONE_ID } from '../../constants'
+import { LAST_DROPZONE_ID, TREE_ITEM_DROPZONE_ID } from 'components/ui/constants'
 
 type FindItemByIdProps<T> = {
   items: T[]
