@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ShoppingCartIcon",
+  "type": "registry:component",
+  "description": "A shopping cart icon for ecommerce sections",
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+  ],
+  "files": [
+    {
+      "path": "registry/components/icons/ShoppingCartIcon.tsx",
+      "content": "import { SVGProps } from 'react'\n\nexport const ShoppingCartIcon = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"24\"\n    height=\"24\"\n    viewBox=\"0 0 24 24\"\n    strokeWidth=\"1.5\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    strokeLinecap=\"round\"\n    strokeLinejoin=\"round\"\n    {...props}\n  >\n    <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\" />\n    <path d=\"M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" />\n    <path d=\"M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" />\n    <path d=\"M17 17h-11v-14h-2\" />\n    <path d=\"M6 5l14 1l-1 7h-13\" />\n  </svg>\n)\n",
+      "type": "registry:component",
+      "target": "components/icons/ShoppingCartIcon.tsx"
+    }
+  ]
+}

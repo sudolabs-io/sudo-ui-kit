@@ -25,7 +25,18 @@
       "registryDependencies": [
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/indicator.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json"
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AdjustmentsIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ComponentsIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/FileIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/InboxIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LifeBuoyIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LockIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PieChartIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SettingsIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ShoppingCartIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/WorldIcon.json"
       ],
       "dependencies": [
         "react-icons@5.5.0",
@@ -1294,6 +1305,156 @@
         "play",
         "media",
         "controls"
+      ]
+    },
+    {
+      "name": "ComponentsIcon",
+      "type": "registry:component",
+      "description": "A components icon for menu items",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/ComponentsIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/ComponentsIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "InboxIcon",
+      "type": "registry:component",
+      "description": "An inbox icon for messaging sections",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/InboxIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/InboxIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "LifeBuoyIcon",
+      "type": "registry:component",
+      "description": "A lifeBuoy icon for help sections",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/LifeBuoyIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/LifeBuoyIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "LockIcon",
+      "type": "registry:component",
+      "description": "A lock icon for authorization sections",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/LockIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/LockIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "PieChartIcon",
+      "type": "registry:component",
+      "description": "A pie chart icon for analytics sections",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/PieChartIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/PieChartIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "SettingsIcon",
+      "type": "registry:component",
+      "description": "A settings icon for configuration sections",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/SettingsIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/SettingsIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "ShoppingCartIcon",
+      "type": "registry:component",
+      "description": "A shopping cart icon for ecommerce sections",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/ShoppingCartIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/ShoppingCartIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "WorldIcon",
+      "type": "registry:component",
+      "description": "A world globe icon for language selection",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/WorldIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/WorldIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "SudolabsIcon",
+      "type": "registry:component",
+      "description": "Sudolabs logo icons in full and mini versions",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/SudolabsIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/SudolabsIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "AdjustmentsIcon",
+      "type": "registry:component",
+      "description": "An adjustments icon for settings controls",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/icons/AdjustmentsIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/AdjustmentsIcon.tsx"
+        }
       ]
     }
   ]

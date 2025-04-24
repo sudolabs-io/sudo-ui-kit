@@ -11,7 +11,18 @@
   "registryDependencies": [
     "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
     "https://sudolabs-io.github.io/sudo-ui-kit/public/r/indicator.json",
-    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json"
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AdjustmentsIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ComponentsIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/FileIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/InboxIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LifeBuoyIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LockIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PieChartIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SettingsIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ShoppingCartIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/WorldIcon.json"
   ],
   "files": [
     {
