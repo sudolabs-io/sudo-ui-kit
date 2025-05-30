@@ -66,7 +66,7 @@ npx shadcn add https://sudolabs-io.github.io/sudo-ui-kit/public/r/all.json
 
 #### Install with Automatic Dependencies
 
-The registry automatically handles dependencies, so when you install a component, all its required dependencies will be installed as well:
+The registry automatically handles dependencies, so when you install a component, all its required dependencies and other dependent registry items will be installed as well:
 ```bash
 npx shadcn add https://sudolabs-io.github.io/sudo-ui-kit/public/r/video-player.json
 ```
