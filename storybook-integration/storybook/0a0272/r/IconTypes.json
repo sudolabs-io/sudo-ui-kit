@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "IconTypes",
+  "type": "registry:component",
+  "description": "Type definitions for icon components",
+  "files": [
+    {
+      "path": "src/components/icons/types.ts",
+      "content": "import { SVGProps } from 'react'\n\nexport interface IconProps extends SVGProps<SVGSVGElement> {}\n",
+      "type": "registry:component",
+      "target": "components/icons/types.ts"
+    }
+  ]
+}

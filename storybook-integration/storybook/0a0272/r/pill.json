@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pill",
+  "type": "registry:ui",
+  "description": "A pill component that extends button with toggle state support",
+  "dependencies": [
+    "class-variance-authority@0.7.1"
+  ],
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/ui/pill.tsx",
+      "content": "import { cn } from 'lib/utils'\nimport { Button, ButtonProps } from './button'\n\nexport interface PillProps extends ButtonProps {\n  toggled?: boolean\n}\n\nexport const Pill = ({ children, toggled = false, ...props }: PillProps) => (\n  <Button\n    className={cn(\n      'rounded-full bg-background px-3 py-2 text-foreground hover:bg-accent focus:ring-ring disabled:text-foreground border border-input flex-shrink-0',\n      toggled && 'bg-primary text-primary-foreground hover:bg-primary/90',\n    )}\n    {...props}\n  >\n    {children}\n  </Button>\n)\n",
+      "type": "registry:ui",
+      "target": "components/ui/pill.tsx"
+    },
+    {
+      "path": "src/components/ui/pill.stories.tsx",
+      "content": "import { Meta, StoryObj } from '@storybook/react'\nimport { Pill, PillProps } from './pill'\n\nconst PillStory = (props: PillProps) => <Pill {...props}>Cooking recipes</Pill>\n\ntype Story = StoryObj<typeof PillStory>\n\nexport const Default: Story = {\n  render: (args) => <PillStory {...args} />,\n}\n\nexport const Toggled: Story = {\n  ...Default,\n  args: {\n    toggled: true,\n  },\n}\n\nexport const Disabled: Story = {\n  ...Default,\n  args: {\n    disabled: true,\n  },\n}\n\nconst meta: Meta<typeof PillStory> = {\n  title: 'Components/Pill/Pill',\n  component: PillStory,\n}\n\nexport default meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/pill.stories.tsx"
+    }
+  ],
+  "docs": "Use the pill component for filterable or selectable items in a row",
+  "categories": [
+    "UI",
+    "Navigation"
+  ]
+}
