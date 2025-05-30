@@ -1,0 +1,16 @@
+import"./WorldIcon-DIRdSrcj.js";import{a as N}from"./ClockIcon-Bz0S9Ov7.js";import"./LoaderIcon-BsJcep18.js";import{B as v}from"./button-MV_p3H9y.js";import{r as t}from"./index-CtvPRVHf.js";import{c as _}from"./index-BwobEAja.js";import{c as o}from"./utils-CytzSlOG.js";import{c as R}from"./createLucideIcon-B43J2gWc.js";import"./index-BoQdhQ_x.js";import"./jsx-runtime-CrtPYZmV.js";import"./jsx-runtime-DPpqJSFY.js";/**
+ * @license lucide-react v0.471.2 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const T=[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["line",{x1:"12",x2:"12",y1:"8",y2:"12",key:"1pkeuh"}],["line",{x1:"12",x2:"12.01",y1:"16",y2:"16",key:"4dfq90"}]],I=R("CircleAlert",T),w=_(o("flex gap-4 flex-wrap sm:flex-nowrap justify-between items-start relative w-full p-4 pl-[40px] bg-secondary-100","border rounded-lg text-foreground"),{variants:{variant:{danger:"border-destructive text-destructive [&>svg]:text-destructive "}}}),c=t.forwardRef(({className:e,variant:a,...r},s)=>t.createElement("div",{ref:s,role:"alert",className:o(w({variant:a}),e),...r}));c.displayName="Callout";const i=t.forwardRef(({className:e,children:a,...r},s)=>t.createElement("div",{className:"relative"},t.createElement(I,{size:16,className:"absolute left-[-25px]"}),t.createElement("h5",{ref:s,className:o("font-medium leading-none tracking-tight",e),...r},a)));i.displayName="CalloutTitle";const m=t.forwardRef(({className:e,...a},r)=>t.createElement("div",{ref:r,className:o("text-sm [&_p]:leading-relaxed",e),...a}));m.displayName="CalloutDescription";const d=t.forwardRef(({className:e,...a},r)=>t.createElement("div",{ref:r,className:o("flex flex-col gap-1",e),...a}));d.displayName="CalloutContent";const p=t.forwardRef(({className:e,...a},r)=>t.createElement("div",{ref:r,className:o("flex gap-2 min-w-fit",e),...a}));p.displayName="CalloutActions";c.__docgenInfo={description:"",methods:[],displayName:"Callout"};p.__docgenInfo={description:"",methods:[],displayName:"CalloutActions"};d.__docgenInfo={description:"",methods:[],displayName:"CalloutContent"};m.__docgenInfo={description:"",methods:[],displayName:"CalloutDescription"};i.__docgenInfo={description:"",methods:[],displayName:"CalloutTitle"};const h="Alert title",A="This is an alert description.",D="Button",x=({variant:e,...a})=>React.createElement(c,{variant:e,...a},React.createElement(d,null,React.createElement(i,null,h),React.createElement(m,null,A)),React.createElement(p,null,React.createElement(v,{leftIcon:N,...e==="danger"&&{variant:"destructive"}},D))),l={render:e=>React.createElement(x,{...e}),args:{variant:null}},n={...l,args:{variant:"danger"}},V={title:"Components/Callout/Callout",component:x};var u,f,g;l.parameters={...l.parameters,docs:{...(u=l.parameters)==null?void 0:u.docs,source:{originalSource:`{
+  render: args => <CalloutStory {...args} />,
+  args: {
+    variant: null
+  }
+}`,...(g=(f=l.parameters)==null?void 0:f.docs)==null?void 0:g.source}}};var C,y,E;n.parameters={...n.parameters,docs:{...(C=n.parameters)==null?void 0:C.docs,source:{originalSource:`{
+  ...Default,
+  args: {
+    variant: 'danger'
+  }
+}`,...(E=(y=n.parameters)==null?void 0:y.docs)==null?void 0:E.source}}};const X=["Default","Danger"];export{n as Danger,l as Default,X as __namedExportsOrder,V as default};
