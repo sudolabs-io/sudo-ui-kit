@@ -9,9 +9,9 @@ const config: StorybookConfig = {
   ],
   "addons": [
     "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
-    "@chromatic-com/storybook",
-    "@storybook/experimental-addon-test"
+    "@storybook/addon-interactions",
+    "@storybook/addon-links",
+    "@storybook/addon-themes"
   ],
   "framework": {
     "name": "@storybook/react-vite",
@@ -23,6 +23,7 @@ const config: StorybookConfig = {
         ...config.resolve.alias,
         'components': path.resolve(__dirname, '../src/components'),
         'context': path.resolve(__dirname, '../src/context'),
+        'hooks': path.resolve(__dirname, '../src/hooks'),
         'lib': path.resolve(__dirname, '../src/lib')
       };
     }
