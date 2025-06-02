@@ -4,6 +4,7 @@
   "type": "registry:file",
   "description": "All components in the registry",
   "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/accordion.json",
     "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AdjustmentsIcon.json",
     "https://sudolabs-io.github.io/sudo-ui-kit/public/r/image-gallery.json",
     "https://sudolabs-io.github.io/sudo-ui-kit/public/r/select.json",
