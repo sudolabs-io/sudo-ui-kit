@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "constants",
+  "type": "registry:ui",
+  "description": "Constants used across UI components",
+  "files": [
+    {
+      "path": "src/components/ui/constants.ts",
+      "content": "export const TREE_ITEM_DROPZONE_ID = 'tree-item'\nexport const LAST_DROPZONE_ID = 'last'\n",
+      "type": "registry:ui",
+      "target": "components/ui/constants.ts"
+    }
+  ]
+}

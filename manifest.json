@@ -3,11 +3,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "0a0272dce658b38feee87f2192c6733fb0946c36",
-        "updatedAt": "2025-05-30T08:46:49.262Z",
-        "href": "storybook-integration/storybook/0a0272",
-        "pullRequestUrl": "https://github.com/sudolabs-io/sudo-ui-kit/pull/2",
-        "githubPagesUrl": "https://sudolabs-io.github.io/sudo-ui-kit/storybook-integration/storybook/0a0272"
+        "headCommitId": "47a8bd352cad6f1bbea45c702370102a14e2b2ff",
+        "updatedAt": "2025-06-02T08:52:32.814Z",
+        "href": "storybook-integration/storybook/47a8bd",
+        "pullRequestUrl": "https://github.com/sudolabs-io/sudo-ui-kit/pull/3",
+        "githubPagesUrl": "https://sudolabs-io.github.io/sudo-ui-kit/storybook-integration/storybook/47a8bd"
       }
     ]
   }
