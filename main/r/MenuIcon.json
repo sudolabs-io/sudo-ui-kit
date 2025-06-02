@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "MenuIcon",
+  "type": "registry:component",
+  "description": "A hamburger menu icon component for navigation",
+  "files": [
+    {
+      "path": "src/components/icons/MenuIcon.tsx",
+      "content": "import { SVGProps } from 'react'\n\nexport const MenuIcon = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    width=\"24\"\n    height=\"24\"\n    viewBox=\"0 0 24 24\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    strokeWidth=\"1.5\"\n    stroke=\"currentColor\"\n    strokeLinecap=\"round\"\n    strokeLinejoin=\"round\"\n    {...props}\n  >\n    <path d=\"M4 6l16 0\" /> <path d=\"M4 12l16 0\" /> <path d=\"M4 18l16 0\" />{' '}\n  </svg>\n)\n",
+      "type": "registry:component",
+      "target": "components/icons/MenuIcon.tsx"
+    }
+  ]
+}
