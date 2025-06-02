@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "callout",
+  "type": "registry:ui",
+  "description": "A callout component for displaying important information or alerts with custom styling",
+  "dependencies": [
+    "class-variance-authority@0.7.1",
+    "lucide-react@0.477.0"
+  ],
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/CloseIcon.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/ui/callout.tsx",
+      "content": "import * as React from 'react'\nimport { cva, type VariantProps } from 'class-variance-authority'\nimport { cn } from 'lib/utils'\nimport { AlertCircle } from 'lucide-react'\n\nconst calloutVariants = cva(\n  cn(\n    'flex gap-4 flex-wrap sm:flex-nowrap justify-between items-start relative w-full p-4 pl-[40px] bg-secondary-100',\n    'border rounded-lg text-foreground',\n  ),\n  {\n    variants: {\n      variant: {\n        danger: 'border-destructive text-destructive [&>svg]:text-destructive ',\n      },\n    },\n  },\n)\n\nconst Callout = React.forwardRef<\n  HTMLDivElement,\n  React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof calloutVariants>\n>(({ className, variant, ...props }, ref) => (\n  <div ref={ref} role=\"alert\" className={cn(calloutVariants({ variant }), className)} {...props} />\n))\nCallout.displayName = 'Callout'\n\nconst CalloutTitle = React.forwardRef<\n  HTMLParagraphElement,\n  React.HTMLAttributes<HTMLHeadingElement>\n>(({ className, children, ...props }, ref) => (\n  <div className=\"relative\">\n    <AlertCircle size={16} className=\"absolute left-[-25px]\" />\n    <h5 ref={ref} className={cn('font-medium leading-none tracking-tight', className)} {...props}>\n      {children}\n    </h5>\n  </div>\n))\nCalloutTitle.displayName = 'CalloutTitle'\n\nconst CalloutDescription = React.forwardRef<\n  HTMLParagraphElement,\n  React.HTMLAttributes<HTMLParagraphElement>\n>(({ className, ...props }, ref) => (\n  <div ref={ref} className={cn('text-sm [&_p]:leading-relaxed', className)} {...props} />\n))\nCalloutDescription.displayName = 'CalloutDescription'\n\nconst CalloutContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(\n  ({ className, ...props }, ref) => (\n    <div ref={ref} className={cn('flex flex-col gap-1', className)} {...props} />\n  ),\n)\nCalloutContent.displayName = 'CalloutContent'\n\nconst CalloutActions = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(\n  ({ className, ...props }, ref) => (\n    <div ref={ref} className={cn('flex gap-2 min-w-fit', className)} {...props} />\n  ),\n)\nCalloutActions.displayName = 'CalloutActions'\n\nexport { Callout, CalloutActions, CalloutContent, CalloutDescription, CalloutTitle }\n",
+      "type": "registry:ui",
+      "target": "components/ui/callout.tsx"
+    },
+    {
+      "path": "src/components/ui/callout.stories.tsx",
+      "content": "import { ComponentProps } from 'react'\nimport { Meta, StoryObj } from '@storybook/react'\nimport { CloseIcon } from 'components/icons'\nimport { Button } from './button'\nimport {\n  Callout,\n  CalloutActions,\n  CalloutContent,\n  CalloutDescription,\n  CalloutTitle,\n} from './callout'\n\nconst ALERT_TITLE = 'Alert title'\nconst ALERT_DESCRIPTION = 'This is an alert description.'\nconst ALERT_BUTTON_TEXT = 'Button'\n\nconst CalloutStory = ({ variant, ...props }: ComponentProps<typeof Callout>) => (\n  <Callout variant={variant} {...props}>\n    <CalloutContent>\n      <CalloutTitle>{ALERT_TITLE}</CalloutTitle>\n      <CalloutDescription>{ALERT_DESCRIPTION}</CalloutDescription>\n    </CalloutContent>\n    <CalloutActions>\n      <Button leftIcon={CloseIcon} {...(variant === 'danger' && { variant: 'destructive' })}>\n        {ALERT_BUTTON_TEXT}\n      </Button>\n    </CalloutActions>\n  </Callout>\n)\n\ntype Story = StoryObj<typeof Callout>\n\nexport const Default: Story = {\n  render: (args) => <CalloutStory {...args} />,\n  args: {\n    variant: null,\n  },\n}\n\nexport const Danger: Story = {\n  ...Default,\n  args: {\n    variant: 'danger',\n  },\n}\n\nconst meta: Meta<typeof Callout> = {\n  title: 'Components/Callout/Callout',\n  component: CalloutStory,\n}\n\nexport default meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/callout.stories.tsx"
+    }
+  ],
+  "docs": "Use the callout component to highlight important information with various styling options",
+  "categories": [
+    "UI",
+    "Feedback",
+    "Display"
+  ]
+}
