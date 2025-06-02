@@ -8,7 +8,10 @@
   ],
   "registryDependencies": [
     "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
-    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json"
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/MenuIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PhoneIcon.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SearchIcon.json"
   ],
   "files": [
     {
