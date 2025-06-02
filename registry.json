@@ -178,6 +178,45 @@
       ]
     },
     {
+      "name": "MenuIcon",
+      "type": "registry:component",
+      "description": "A hamburger menu icon component for navigation",
+      "files": [
+        {
+          "path": "src/components/icons/MenuIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/MenuIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "PhoneIcon",
+      "type": "registry:component",
+      "description": "A phone icon component for contact information",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/icons/PhoneIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/PhoneIcon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "SearchIcon",
+      "type": "registry:component",
+      "description": "A search icon component for search functionality",
+      "files": [
+        {
+          "path": "src/components/icons/SearchIcon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/SearchIcon.tsx"
+        }
+      ]
+    },
+    {
       "name": "FileIcon",
       "type": "registry:component",
       "description": "A file icon component for document representations",
@@ -958,6 +997,18 @@
       ]
     },
     {
+      "name": "useMenu",
+      "type": "registry:hook",
+      "description": "Hook for menu component",
+      "files": [
+        {
+          "path": "src/hooks/useMenu.ts",
+          "type": "registry:hook",
+          "target": "hooks/useMenu.ts"
+        }
+      ]
+    },
+    {
       "name": "dnd-tree",
       "type": "registry:ui",
       "description": "A drag and drop tree component with support for nested items",
@@ -1571,6 +1622,9 @@
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/social-button.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/CloseIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LockIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/MenuIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/MenuIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/MenuIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/command.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/multi-select.json",

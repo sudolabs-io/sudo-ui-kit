@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/react'
 import { useNavbarMenu } from 'hooks/useMenu'
-import { MenuIcon } from 'components/icons'
+import { MenuIcon } from 'components/icons/MenuIcon'
 import { PhoneIcon } from 'components/icons/PhoneIcon'
 import { SearchIcon } from 'components/icons/SearchIcon'
 import { WorldIcon } from 'components/icons/WorldIcon'

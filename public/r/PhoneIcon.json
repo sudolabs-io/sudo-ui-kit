@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "PhoneIcon",
+  "type": "registry:component",
+  "description": "A phone icon component for contact information",
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/icons/PhoneIcon.tsx",
+      "content": "import { SVGProps } from 'react'\n\nexport const PhoneIcon = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"24\"\n    height=\"24\"\n    viewBox=\"0 0 24 24\"\n    strokeWidth=\"1.5\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    strokeLinecap=\"round\"\n    strokeLinejoin=\"round\"\n    {...props}\n  >\n    <path d=\"M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2\" />\n  </svg>\n)\n",
+      "type": "registry:component",
+      "target": "components/icons/PhoneIcon.tsx"
+    }
+  ]
+}

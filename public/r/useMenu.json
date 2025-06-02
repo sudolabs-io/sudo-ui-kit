@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "useMenu",
+  "type": "registry:hook",
+  "description": "Hook for menu component",
+  "files": [
+    {
+      "path": "src/hooks/useMenu.ts",
+      "content": "import { useRef, useState } from 'react'\n\nexport const useNavbarMenu = () => {\n  const menuRef = useRef<HTMLDivElement>(null)\n  const [isMenuExpanded, setIsMenuExpanded] = useState<boolean>(false)\n\n  const onMenuVisibilityChange = () => {\n    setIsMenuExpanded(!!menuRef.current?.classList.contains('block'))\n  }\n\n  return {\n    menuRef,\n    isMenuExpanded,\n    onMenuVisibilityChange,\n  }\n}\n",
+      "type": "registry:hook",
+      "target": "hooks/useMenu.ts"
+    }
+  ]
+}
