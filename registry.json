@@ -795,6 +795,38 @@
       ]
     },
     {
+      "name": "navbar",
+      "type": "registry:ui",
+      "description": "A responsive navigation bar component with logo, menu items, and mobile menu support",
+      "dependencies": [
+        "next@15.2.0"
+      ],
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/navbar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/navbar.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Navigation",
+        "Layout"
+      ],
+      "docs": "Use the navbar component to create responsive navigation bars with logo, menu items, and mobile menu support",
+      "tags": [
+        "navbar",
+        "navigation",
+        "menu",
+        "responsive",
+        "header"
+      ]
+    },
+    {
       "name": "scroll-area",
       "type": "registry:ui",
       "description": "A scrollable area with custom scrollbars",
@@ -1542,6 +1574,7 @@
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/command.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/multi-select.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/navbar.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/tooltip.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ComponentsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/phone-input.json",
