@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea",
+  "type": "registry:ui",
+  "description": "A textarea component with form integration support",
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/label.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/ui/textarea.tsx",
+      "content": "import * as React from 'react'\nimport { cn } from 'lib/utils'\nimport { Label } from './label'\n\nexport interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {\n  label: string\n  placeholder: string\n  topNote?: string\n  bottomNote?: string\n}\n\nconst Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(\n  ({ className, label, placeholder, topNote, bottomNote, ...props }, ref) => (\n    <div className=\"flex w-full flex-col gap-2\">\n      <div className=\"flex flex-row justify-between\">\n        <Label className=\"text-foreground\">{label}</Label>\n        {topNote && <p className=\"text-xs text-muted-foreground\">{topNote}</p>}\n      </div>\n      <textarea\n        className={cn(\n          'placeholder-muted-foreground resize-none flex min-h-[80px] w-full rounded-md border border-solid border-input bg-background px-4 py-3 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-foreground',\n          className,\n        )}\n        ref={ref}\n        placeholder={placeholder}\n        {...props}\n      />\n      {bottomNote && <p className=\"text-xs text-muted-foreground\">{bottomNote}</p>}\n    </div>\n  ),\n)\nTextarea.displayName = 'Textarea'\n\nexport { Textarea }\n",
+      "type": "registry:ui",
+      "target": "components/ui/textarea.tsx"
+    },
+    {
+      "path": "src/components/ui/textarea.stories.tsx",
+      "content": "import { Meta, StoryObj } from '@storybook/react'\nimport { Textarea, TextareaProps } from './textarea'\n\ninterface Props extends TextareaProps {}\n\nconst TextareaStory = (props: Props) => <Textarea {...props} />\n\ntype Story = StoryObj<typeof meta>\n\nexport const Default: Story = {\n  args: {\n    label: 'Your message',\n    placeholder: 'Write text here ...',\n  },\n}\n\nexport const WithTopNote: Story = {}\nWithTopNote.args = {\n  ...Default.args,\n  topNote: 'A note for extra info',\n}\n\nexport const WithBottomNote: Story = {}\nWithBottomNote.args = {\n  ...WithTopNote.args,\n  bottomNote: 'A note for extra info',\n}\n\nconst meta: Meta<typeof TextareaStory> = {\n  title: 'Components/Textarea/Textarea',\n  component: TextareaStory,\n  argTypes: {\n    label: { control: { type: 'text' } },\n    placeholder: { control: { type: 'text' } },\n    topNote: { control: { type: 'text' } },\n    bottomNote: { control: { type: 'text' } },\n  },\n  render: (args) => <TextareaStory {...args} />,\n}\n\nexport default meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/textarea.stories.tsx"
+    }
+  ],
+  "docs": "Use the textarea component for multi-line text input with form integration support",
+  "categories": [
+    "UI",
+    "Forms",
+    "Inputs"
+  ]
+}
