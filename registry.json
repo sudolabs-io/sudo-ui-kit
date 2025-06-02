@@ -117,6 +117,11 @@
           "path": "src/components/ui/indicator.tsx",
           "type": "registry:ui",
           "target": "components/ui/indicator.tsx"
+        },
+        {
+          "path": "src/components/ui/indicator.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/indicator.stories.tsx"
         }
       ]
     },
@@ -852,6 +857,11 @@
           "path": "src/components/ui/navbar.tsx",
           "type": "registry:ui",
           "target": "components/ui/navbar.tsx"
+        },
+        {
+          "path": "src/components/ui/navbar.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/navbar.stories.tsx"
         }
       ],
       "categories": [
