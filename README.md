@@ -52,10 +52,9 @@ npx shadcn add https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json
 
 Install multiple components:
 ```bash
-npx shadcn add https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json
-npx shadcn add https://sudolabs-io.github.io/sudo-ui-kit/public/r/input.json
-npx shadcn add https://sudolabs-io.github.io/sudo-ui-kit/public/r/calendar.json
+npx shadcn add https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json https://sudolabs-io.github.io/sudo-ui-kit/public/r/input.json https://sudolabs-io.github.io/sudo-ui-kit/public/r/calendar.json
 ```
+Simply separate by space
 
 #### Install All Components
 
