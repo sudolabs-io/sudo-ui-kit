@@ -1412,6 +1412,38 @@
       ]
     },
     {
+      "name": "textarea",
+      "type": "registry:ui",
+      "description": "A textarea component with form integration support",
+      "registryDependencies": [
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/label.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/textarea.tsx"
+        },
+        {
+          "path": "src/components/ui/textarea.stories.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/textarea.stories.tsx"
+        }
+      ],
+      "categories": [
+        "UI",
+        "Forms",
+        "Inputs"
+      ],
+      "docs": "Use the textarea component for multi-line text input with form integration support",
+      "tags": [
+        "textarea",
+        "input",
+        "form"
+      ]
+    },
+    {
       "name": "video-player",
       "type": "registry:ui",
       "description": "A video player component with thumbnail support and custom controls",
