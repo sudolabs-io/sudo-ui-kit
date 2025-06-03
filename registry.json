@@ -71,6 +71,7 @@
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PieChartIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SettingsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ShoppingCartIcon.json",
+        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/WorldIcon.json"
       ],
       "dependencies": [
