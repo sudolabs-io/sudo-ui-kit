@@ -20,113 +20,6 @@
       ]
     },
     {
-      "name": "accordion",
-      "type": "registry:ui",
-      "description": "A collapsible accordion component with multiple variants and ARIA support",
-      "dependencies": [
-        "@radix-ui/react-accordion@1.2.3",
-        "class-variance-authority@0.7.1",
-        "react-icons@5.5.0"
-      ],
-      "registryDependencies": [
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
-      ],
-      "files": [
-        {
-          "path": "src/components/ui/accordion.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/accordion.tsx"
-        },
-        {
-          "path": "src/components/ui/accordion.stories.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/accordion.stories.tsx"
-        }
-      ],
-      "categories": [
-        "UI",
-        "Layout"
-      ],
-      "docs": "Use the accordion component to display collapsible content panels with various styling variants",
-      "tags": [
-        "accordion",
-        "collapsible",
-        "expandable",
-        "panel"
-      ]
-    },
-    {
-      "name": "sidebar",
-      "type": "registry:ui",
-      "registryDependencies": [
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/indicator.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AdjustmentsIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ComponentsIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/FileIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/InboxIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LifeBuoyIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LockIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PieChartIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SettingsIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ShoppingCartIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/WorldIcon.json"
-      ],
-      "dependencies": [
-        "react-icons@5.5.0",
-        "@radix-ui/react-accordion@1.2.3",
-        "@storybook/react@8.6.3"
-      ],
-      "files": [
-        {
-          "path": "src/components/ui/sidebar.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/sidebar.tsx"
-        },
-        {
-          "path": "src/components/ui/sidebar.stories.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/sidebar.stories.tsx"
-        }
-      ],
-      "description": "A responsive sidebar component with storybook integration.",
-      "categories": [
-        "UI",
-        "Layout"
-      ],
-      "docs": "Set up the sidebar by importing it into your project and adjusting its props as needed.",
-      "tags": [
-        "sidebar",
-        "layout",
-        "responsive"
-      ]
-    },
-    {
-      "name": "indicator",
-      "type": "registry:ui",
-      "description": "A customizable indicator component with different variants",
-      "dependencies": [
-        "class-variance-authority@0.7.1"
-      ],
-      "registryDependencies": [
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
-      ],
-      "files": [
-        {
-          "path": "src/components/ui/indicator.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/indicator.tsx"
-        },
-        {
-          "path": "src/components/ui/indicator.stories.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/indicator.stories.tsx"
-        }
-      ]
-    },
-    {
       "name": "IconTypes",
       "type": "registry:component",
       "description": "Type definitions for icon components",
@@ -840,46 +733,6 @@
       ]
     },
     {
-      "name": "navbar",
-      "type": "registry:ui",
-      "description": "A responsive navigation bar component with logo, menu items, and mobile menu support",
-      "dependencies": [
-        "next@15.2.0"
-      ],
-      "registryDependencies": [
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/button.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/MenuIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PhoneIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SearchIcon.json"
-      ],
-      "files": [
-        {
-          "path": "src/components/ui/navbar.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/navbar.tsx"
-        },
-        {
-          "path": "src/components/ui/navbar.stories.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/navbar.stories.tsx"
-        }
-      ],
-      "categories": [
-        "UI",
-        "Navigation",
-        "Layout"
-      ],
-      "docs": "Use the navbar component to create responsive navigation bars with logo, menu items, and mobile menu support",
-      "tags": [
-        "navbar",
-        "navigation",
-        "menu",
-        "responsive",
-        "header"
-      ]
-    },
-    {
       "name": "scroll-area",
       "type": "registry:ui",
       "description": "A scrollable area with custom scrollbars",
@@ -1383,78 +1236,6 @@
       ]
     },
     {
-      "name": "switch",
-      "type": "registry:ui",
-      "description": "A switch component with form integration support",
-      "dependencies": [
-        "@radix-ui/react-switch@1.1.3",
-        "react-hook-form@7.54.2",
-        "@hookform/resolvers@4.1.3",
-        "zod@3.24.2",
-        "class-variance-authority@0.7.1"
-      ],
-      "registryDependencies": [
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json"
-      ],
-      "files": [
-        {
-          "path": "src/components/ui/switch.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/switch.tsx"
-        },
-        {
-          "path": "src/components/ui/switch.stories.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/switch.stories.tsx"
-        }
-      ],
-      "categories": [
-        "UI",
-        "Forms",
-        "Inputs"
-      ],
-      "docs": "Use the switch component for boolean input with form integration support",
-      "tags": [
-        "switch",
-        "boolean",
-        "input",
-        "form"
-      ]
-    },
-    {
-      "name": "textarea",
-      "type": "registry:ui",
-      "description": "A textarea component with form integration support",
-      "registryDependencies": [
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/label.json"
-      ],
-      "files": [
-        {
-          "path": "src/components/ui/textarea.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/textarea.tsx"
-        },
-        {
-          "path": "src/components/ui/textarea.stories.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/textarea.stories.tsx"
-        }
-      ],
-      "categories": [
-        "UI",
-        "Forms",
-        "Inputs"
-      ],
-      "docs": "Use the textarea component for multi-line text input with form integration support",
-      "tags": [
-        "textarea",
-        "input",
-        "form"
-      ]
-    },
-    {
       "name": "toast",
       "type": "registry:ui",
       "description": "A toast notification system with customizable variants and actions",
@@ -1732,7 +1513,6 @@
       "type": "registry:file",
       "description": "All components in the registry",
       "registryDependencies": [
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/accordion.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AdjustmentsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/AsterixIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/badge.json",
@@ -1754,7 +1534,6 @@
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/IconTypes.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/image-gallery.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/InboxIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/indicator.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/input.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/label.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LifeBuoyIcon.json",
@@ -1762,7 +1541,6 @@
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/LockIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/MenuIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/multi-select.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/navbar.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/phone-input.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PhoneIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/PieChartIcon.json",
@@ -1778,12 +1556,9 @@
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/separator.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SettingsIcon.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/ShoppingCartIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/sidebar.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/slider.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/social-button.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/SudolabsIcon.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/switch.json",
-        "https://sudolabs-io.github.io/sudo-ui-kit/public/r/textarea.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/toast.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/tooltip.json",
         "https://sudolabs-io.github.io/sudo-ui-kit/public/r/TooltipIcon.json",
