@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group",
+  "type": "registry:ui",
+  "description": "A radio group component with form integration support",
+  "dependencies": [
+    "@radix-ui/react-radio-group@1.2.3",
+    "react-hook-form@7.54.2",
+    "@hookform/resolvers@4.1.3",
+    "zod@3.24.2",
+    "class-variance-authority@0.7.1"
+  ],
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json",
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/form.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/ui/radio-group.tsx",
+      "content": "import * as React from 'react'\nimport * as RadioGroupPrimitive from '@radix-ui/react-radio-group'\nimport { cn } from 'lib/utils'\n\nconst RadioGroup = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>\n>(({ className, ...props }, ref) => (\n  <RadioGroupPrimitive.Root className={cn('grid gap-2', className)} {...props} ref={ref} />\n))\nRadioGroup.displayName = RadioGroupPrimitive.Root.displayName\n\nconst RadioGroupItem = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitive.Item>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item>\n>(({ className, children, ...props }, ref) => (\n  <RadioGroupPrimitive.Item\n    ref={ref}\n    className={cn(\n      'aspect-square h-[18px] w-[18px] rounded-full border',\n      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',\n      'data-[state=checked]:border-primary data-[state=unchecked]:border-primary',\n      'disabled:cursor-not-allowed',\n      className,\n    )}\n    {...props}\n  >\n    <RadioGroupPrimitive.Indicator className=\"flex items-center justify-center\">\n      <div className=\"h-2.5 w-2.5 rounded-full bg-primary\" />\n    </RadioGroupPrimitive.Indicator>\n  </RadioGroupPrimitive.Item>\n))\nRadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName\n\nexport { RadioGroup, RadioGroupItem }\n",
+      "type": "registry:ui",
+      "target": "components/ui/radio-group.tsx"
+    },
+    {
+      "path": "src/components/ui/radio-group.stories.tsx",
+      "content": "import { useForm } from 'react-hook-form'\nimport { zodResolver } from '@hookform/resolvers/zod'\nimport { Meta, StoryObj } from '@storybook/react'\nimport { z } from 'zod'\nimport {\n  Form,\n  FormControl,\n  FormDescription,\n  FormField,\n  FormItem,\n  FormLabel,\n  FormMessage,\n} from './form'\nimport { RadioGroup, RadioGroupItem } from './radio-group'\n\nconst formSchema = z.object({\n  radioGroup: z.enum(['option1', 'option2', 'option3'], {\n    required_error: 'You need to select a notification type.',\n  }),\n})\n\nconst RadioGroupStory = () => {\n  const formMethods = useForm<z.infer<typeof formSchema>>({\n    resolver: zodResolver(formSchema),\n    defaultValues: {\n      radioGroup: 'option1',\n    },\n  })\n\n  return (\n    <Form {...formMethods}>\n      <form\n        onSubmit={(e) => {\n          e.preventDefault()\n          void formMethods.handleSubmit((formData) => console.log(formData))\n        }}\n        className=\"space-y-6\"\n      >\n        <FormField\n          control={formMethods.control}\n          name=\"radioGroup\"\n          render={({ field }) => (\n            <FormItem className=\"space-y-3\">\n              <FormLabel>Notify me about...</FormLabel>\n              <FormControl>\n                <RadioGroup\n                  disabled={field.disabled}\n                  onValueChange={field.onChange}\n                  defaultValue={field.value}\n                  className=\"flex flex-col space-y-1\"\n                >\n                  <FormItem className=\"flex items-start space-x-3 space-y-0\">\n                    <FormControl>\n                      <RadioGroupItem value=\"all\" />\n                    </FormControl>\n                    <div className=\"space-y-1 leading-none\">\n                      <FormLabel>All new messages</FormLabel>\n                      <FormDescription>Radio group option description example.</FormDescription>\n                    </div>\n                  </FormItem>\n                  <FormItem className=\"flex items-start space-x-3 space-y-0\">\n                    <FormControl>\n                      <RadioGroupItem value=\"mentions\" />\n                    </FormControl>\n                    <div className=\"space-y-1 leading-none\">\n                      <FormLabel>Direct messages and mentions</FormLabel>\n                      <FormDescription>Radio group option description example.</FormDescription>\n                    </div>\n                  </FormItem>\n                  <FormItem className=\"flex items-start space-x-3 space-y-0\">\n                    <FormControl>\n                      <RadioGroupItem value=\"none\" />\n                    </FormControl>\n                    <div className=\"space-y-1 leading-none\">\n                      <FormLabel>Nothing</FormLabel>\n                      <FormDescription>Radio group option description example.</FormDescription>\n                    </div>\n                  </FormItem>\n                </RadioGroup>\n              </FormControl>\n              <FormMessage />\n            </FormItem>\n          )}\n        />\n      </form>\n    </Form>\n  )\n}\n\ntype Story = StoryObj<typeof RadioGroup>\n\nexport const Default: Story = {\n  render: () => <RadioGroupStory />,\n}\n\nconst meta: Meta<typeof RadioGroup> = {\n  title: 'Components/RadioGroup/Radio Group',\n  component: RadioGroup,\n}\n\nexport default meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/radio-group.stories.tsx"
+    }
+  ],
+  "docs": "Use the radio group component for single selection options with form integration support",
+  "categories": [
+    "UI",
+    "Forms"
+  ]
+}

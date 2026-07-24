@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "rating",
+  "type": "registry:ui",
+  "description": "A rating component with customizable icons and hover/click interactions",
+  "dependencies": [
+    "lucide-react@0.477.0"
+  ],
+  "registryDependencies": [
+    "https://sudolabs-io.github.io/sudo-ui-kit/public/r/utils.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/ui/rating.tsx",
+      "content": "import React, { useEffect, useState } from 'react'\nimport { Star } from 'lucide-react'\n\nexport interface RatingProps {\n  fullIcon?: React.ReactNode\n  emptyIcon?: React.ReactNode\n  initialRating?: number\n  onHover?: (rating: number) => void\n  onChange?: (rating: number) => void\n}\n\nexport const Rating: React.FC<RatingProps> = ({\n  fullIcon = <Star className=\"text-foreground\" fill=\"currentColor\" />,\n  emptyIcon = <Star className=\"text-foreground\" />,\n  initialRating = 0,\n  onHover,\n  onChange,\n}) => {\n  const [hoveredRating, setHoveredRating] = useState(0)\n  const [selectedRating, setSelectedRating] = useState(initialRating)\n\n  const handleMouseOver = (rating: number) => {\n    setHoveredRating(rating)\n  }\n  const handleMouseOut = () => {\n    setHoveredRating(0)\n  }\n  const handleClick = (rating: number) => {\n    setSelectedRating(rating)\n  }\n\n  useEffect(() => {\n    onHover?.(hoveredRating)\n  }, [hoveredRating, onHover])\n  useEffect(() => {\n    onChange?.(selectedRating)\n  }, [selectedRating, onChange])\n\n  return (\n    <div>\n      {Array.from({ length: 5 }, (_, index) => index + 1).map((rating) => (\n        <button\n          type=\"button\"\n          key={rating}\n          onMouseOver={() => handleMouseOver(rating)}\n          onFocus={() => handleMouseOver(rating)}\n          onMouseOut={handleMouseOut}\n          onBlur={handleMouseOut}\n          onClick={() => handleClick(rating)}\n        >\n          {hoveredRating >= rating || selectedRating >= rating ? fullIcon : emptyIcon}\n        </button>\n      ))}\n    </div>\n  )\n}\n",
+      "type": "registry:ui",
+      "target": "components/ui/rating.tsx"
+    },
+    {
+      "path": "src/components/ui/rating.stories.tsx",
+      "content": "import { useState } from 'react'\nimport { Meta, StoryObj } from '@storybook/react'\nimport { Rating, RatingProps } from './rating'\n\ntype RatingStoryProps = Pick<RatingProps, 'initialRating'>\n\nconst RatingStory = ({ initialRating }: RatingStoryProps) => {\n  const [hoverValue, setHoverValue] = useState<number | null>(null)\n  const [fixedValue, setFixedValue] = useState<number | null>(null)\n\n  return (\n    <>\n      <Rating\n        initialRating={initialRating}\n        onHover={(value) => setHoverValue(value)}\n        onChange={(value) => setFixedValue(value)}\n      />\n      <p>Hover value: {hoverValue}</p>\n      <p>Fixed value: {fixedValue}</p>\n    </>\n  )\n}\n\ntype Story = StoryObj<typeof meta>\n\nexport const Default: Story = {\n  render: (args) => <RatingStory {...args} />,\n  args: {\n    initialRating: 3,\n  },\n  argTypes: {\n    initialRating: { type: 'number', defaultValue: 1 },\n  },\n}\n\nconst meta: Meta<typeof RatingStory> = {\n  title: 'Components/Rating/Rating',\n  component: RatingStory,\n}\n\nexport default meta\n",
+      "type": "registry:ui",
+      "target": "components/ui/rating.stories.tsx"
+    }
+  ],
+  "docs": "Use the rating component to collect user ratings with customizable icons and interactive feedback",
+  "categories": [
+    "UI",
+    "Inputs"
+  ]
+}
